@@ -1,0 +1,78 @@
+import { useState } from "react";
+
+const Navbar = () => {
+  const links = [
+    {
+      title: "HOME",
+      href: "/",
+    },
+    {
+      title: "WORKS",
+      href: "/works",
+    },
+    {
+      title: "ABOUT",
+      href: "/about",
+    },
+    {
+      title: "BLOG",
+      href: "/blogs",
+    },
+    {
+      title: "CONTACT",
+      href: "/contact",
+    },
+  ];
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className=" text-shade1 h-24 flex justify-between items-center py">
+      <div className="font-bold tracking-tighter text-6xl leading-[0.70] w-fit">
+        <h1 className="text-cente flex flex-col">
+          <span>YEF</span>
+
+          <span className="text-center tracking-normal"> RY</span>
+        </h1>
+      </div>
+      <div
+        onClick={() => setIsOpen(!isOpen)}
+        className="h-full w-32 flex flex-col justify-center items-center gap-3 group cursor-pointer"
+      >
+        <div className="h-[2px] w-24 bg-shade2 group-hover:bg-shade1 transition duration-500"></div>
+        <div className="h-[2px] w-24 bg-shade2 group-hover:bg-shade1 transition duration-500 -translate-x-5 group-hover:translate-x-0"></div>
+        <div className="h-[2px] w-24 bg-shade2 group-hover:bg-shade1 transition duration-500"></div>
+      </div>
+      {isOpen && (
+        <ul className="bg-shade3 group absolute inset-0 text-5xl md:text-7xl lg:text-8xl font-medium flex flex-col gap-2 md:gap-4  px-8 pt-20">
+          {links.map((link, i) => (
+            <li
+              key={i}
+              onClick={() => setIsOpen(!isOpen)}
+              className="transition duration-300 w-fit hover:translate-x-4 hover:text-shade2"
+            >
+              <a href="">{link.title}</a>
+            </li>
+          ))}
+          <div
+            onClick={() => setIsOpen(!isOpen)}
+            className="absolute cursor-pointer top-4 right-8"
+          >
+            <i className="fa-solid fa-xmark"></i>
+          </div>
+          <div className="flex items-center  w-full mt-auto mb-8 text-shade2 text-3xl">
+            <div className="flex gap-8">
+                <a className="hover:text-shade1 transition duration-300" target="_blank" href=""><i className="fa-brands fa-github"></i></a>
+                <a className="hover:text-shade1 transition duration-300" target="_blank" href=""><i className="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div className="text-xl absolute right-8">
+                <p>New York, NY</p>
+            </div>
+          </div>
+        </ul>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
