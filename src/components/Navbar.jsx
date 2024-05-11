@@ -27,9 +27,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" text-shade1 h-24 flex justify-between items-center py">
+    <nav className="z-50 fixed w-full top-0 text-shade1 h-24 flex justify-between items-center px-4 pt-4">
       <div className="font-bold tracking-tighter text-6xl leading-[0.70] w-fit">
-        <h1 className="text-cente flex flex-col">
+        <h1 className="flex flex-col">
           <span>YEF</span>
 
           <span className="text-center tracking-normal"> RY</span>
@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="h-[2px] w-24 bg-shade2 group-hover:bg-shade1 transition duration-500"></div>
       </div>
       {isOpen && (
-        <ul className="bg-shade3 group absolute inset-0 text-5xl md:text-7xl lg:text-8xl font-medium flex flex-col gap-2 md:gap-4  px-8 pt-20">
+        <ul className="bg-shade3 group absolute top-0 left-0 right-0 h-screen  text-6xl md:text-7xl lg:text-8xl font-medium flex flex-col  gap-2 md:gap-4  px-8 pt-20">
           {links.map((link, i) => (
             <li
               key={i}
@@ -60,12 +60,12 @@ const Navbar = () => {
           >
             <i className="fa-solid fa-xmark"></i>
           </div>
-          <div className="flex items-center  w-full mt-auto mb-8 text-shade2 text-3xl">
+          <div className=" flex items-end justify-end gap-8 w-full h-full  text-shade2 text-3xl pb-12">
             <div className="flex gap-8">
                 <a className="hover:text-shade1 transition duration-300" target="_blank" href=""><i className="fa-brands fa-github"></i></a>
                 <a className="hover:text-shade1 transition duration-300" target="_blank" href=""><i className="fa-brands fa-linkedin"></i></a>
             </div>
-            <div className="text-xl absolute right-8">
+            <div className="text-xl">
                 <p>New York, NY</p>
             </div>
           </div>
