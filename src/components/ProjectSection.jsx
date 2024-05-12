@@ -6,6 +6,9 @@ const ProjectSection = () => {
         <h2 className="text-shade1 uppercase tracking-tighter text-[80px] lg:text-[100px] font-bold">Projects</h2>
         <div>
             <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
         </div>
     </section>
   )
