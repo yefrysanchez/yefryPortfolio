@@ -1,4 +1,5 @@
 import Hero from "../components/Hero"
+import ProjectSection from "../components/ProjectSection"
 import WebDevSection from "../components/WebDevSection"
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <main className="">
       <Hero />
       <WebDevSection/>
+      <ProjectSection />
 
     </main>
   )
