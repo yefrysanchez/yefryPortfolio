@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <nav className="z-50 fixed w-full top-0 text-shade1 h-24 flex justify-between items-center px-4 pt-4">
       <div className="font-bold tracking-tighter text-6xl leading-[0.70] w-fit">
-        <h1 className="flex flex-col">
+        <h1 className="flex flex-col select-none">
           <span>YEF</span>
 
           <span className="text-center tracking-normal"> RY</span>
@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="h-[2px] w-24 bg-shade2 group-hover:bg-shade1 transition duration-500"></div>
       </div>
       {isOpen && (
-        <ul className="bg-shade3 group absolute top-0 left-0 right-0 h-screen  text-6xl md:text-7xl lg:text-8xl font-medium flex flex-col  gap-2 md:gap-4  px-8 pt-20">
+        <ul className="bg-shade3 group overflow-y-scroll absolute top-0 left-0 right-0 h-screen  text-6xl md:text-7xl lg:text-8xl font-medium flex flex-col  gap-2 md:gap-4  px-8 pt-20">
           {links.map((link, i) => (
             <li
               key={i}

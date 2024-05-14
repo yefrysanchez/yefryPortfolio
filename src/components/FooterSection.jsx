@@ -1,6 +1,6 @@
 const FooterSection = () => {
   return (
-    <footer className="text-shade1 flex flex-col lg:flex-row lg:h-[412px] h-screen lg:border-t lg:border-t-shade2/50">
+    <footer className="text-shade1 flex flex-col lg:flex-row lg:h-[412px] h-screen border-t border-t-shade2/50">
       <div className="lg:border-r lg:border-r-shade2/50 lg:border-b border-b-shade2/50 lg:h-auto h-[80%]">
         <div className="lg:p-12 pt-8 px-4 lg:w-[418px] h-[60%]">
           <h1 className="flex flex-col tracking-tighter leading-[.7] text-[150px] font-bold select-none pt-20 lg:pt-0">
@@ -25,12 +25,17 @@ const FooterSection = () => {
         <div className="flex gap-8 text-2xl text-shade2 p-6">
           <div className="">
             <a
+              target="_blank"
               className="mr-6 hover:text-shade1 transition duration-300"
-              href=""
+              href="https://www.linkedin.com/in/yefrysanchez/"
             >
               <i className="fa-brands fa-linkedin"></i>
             </a>
-            <a className="hover:text-shade1 transition duration-300" href="">
+            <a
+              className="hover:text-shade1 transition duration-300"
+              target="_blank"
+              href="https://github.com/yefrysanchez"
+            >
               <i className="fa-brands fa-github"></i>
             </a>
           </div>
