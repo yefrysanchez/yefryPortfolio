@@ -4,6 +4,7 @@ import FooterSection from "./components/FooterSection";
 import Navbar from "./components/Navbar";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/ProjectPage";
 
 function App() {
   // https://blurr.framer.website/
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="bg-shade3 min-h-screen font-inter">
       <Navbar />
-      <ContactPage />
+      <ProjectPage />
       <FooterSection />
     </div>
   );
