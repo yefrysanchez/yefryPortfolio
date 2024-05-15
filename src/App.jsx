@@ -1,4 +1,5 @@
 import "./App.css";
+import ContactPage from "./components/ContactPage";
 import FooterSection from "./components/FooterSection";
 import Navbar from "./components/Navbar";
 import AboutPage from "./pages/AboutPage";
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="bg-shade3 min-h-screen font-inter">
       <Navbar />
-      <AboutPage />
+      <ContactPage />
       <FooterSection />
     </div>
   );

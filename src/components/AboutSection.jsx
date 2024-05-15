@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <div className="px-4 text-shade1 lg:h-[1000px] flex flex-col items-center justify-center">
+    <div className="px-4 text-shade1 lg:h-[1000px] 2xl:h-screen mb-12 flex flex-col items-center justify-center">
       <div className="">
         <p className="text-2xl md:text-3xl lg:text-5xl xl:text-7xl font-medium tracking-tight lg:max-w-[1100px] xl:max-w-[1400px] mx-auto">
           I'm a Web Developer with a passion for Front-End Development.

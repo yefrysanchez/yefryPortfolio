@@ -10,20 +10,21 @@ const AboutPage = () => {
             </span>
             <span>Sanchez</span>
           </h1>
-          <p className="text-2xl ">
-            Passionate Front-end Developer dedicated to crafting intuitive user
+          <p className="text-2xl flex flex-col gap-4 xl:pr-4">
+            <span>Passionate Front-end Developer dedicated to crafting intuitive user
             interfaces. With a focus on blending design and functionality, I
-            transform concepts into responsive and engaging websites. I am
+            transform concepts into responsive and engaging websites.</span>
+            <span className="mt-4">I am
             constantly exploring new technologies to enhance user experiences
             and drive innovation in web development. I love baseball, video
             games, producing music, and all about computers from hardware to
-            software. I am passionate about technology in general.
+            software. I am passionate about technology in general.</span>
           </p>
         </div>
         <div className="xl:w-1/2 2xl:w-2/3 xl:h-[960px]">
           <img
-            className="rounded-3xl w-full h-full object-cover"
-            src="/about.jpeg"
+            className="rounded-3xl w-full h-full object-cover 2xl:object-[center_-250px]"
+            src="/profile.jpeg"
             alt="about image"
           />
         </div>

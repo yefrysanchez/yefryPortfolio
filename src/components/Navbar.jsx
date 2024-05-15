@@ -27,7 +27,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="z-50 fixed w-full top-0 text-shade1 h-24 flex justify-between items-center px-4 pt-4">
+    <nav className="z-50 fixed w-full top-0 text-shade1 bg-shade3/30 h-24 flex justify-between items-center p-8">
       <div className="font-bold tracking-tighter text-6xl leading-[0.70] w-fit">
         <h1 className="flex flex-col select-none">
           <span>YEF</span>
