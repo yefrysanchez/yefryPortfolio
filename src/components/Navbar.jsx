@@ -28,20 +28,19 @@ const Navbar = () => {
 
   return (
     <nav className="z-50 fixed w-full top-0 text-shade1 bg-shade3/30 h-24 flex justify-between items-center p-8">
-      <div className="font-bold tracking-tighter text-6xl leading-[0.70] w-fit">
-        <h1 className="flex flex-col select-none">
-          <span>YEF</span>
+      <div className="font-bold tracking-[-5px] text-6xl w-fit">
+        <h1 className="flex flex-col select-none text-[40px]">
+          <span>YEFRY</span>
 
-          <span className="text-center tracking-normal"> RY</span>
         </h1>
       </div>
       <div
         onClick={() => setIsOpen(!isOpen)}
         className="h-full w-32 flex flex-col justify-center items-center gap-3 group cursor-pointer"
       >
-        <div className="h-[2px] w-24 bg-shade2 group-hover:bg-shade1 transition duration-500"></div>
-        <div className="h-[2px] w-24 bg-shade2 group-hover:bg-shade1 transition duration-500 -translate-x-5 group-hover:translate-x-0"></div>
-        <div className="h-[2px] w-24 bg-shade2 group-hover:bg-shade1 transition duration-500"></div>
+        <div className="h-[2px] w-24 bg-shade1  transition duration-500"></div>
+        <div className="h-[2px] w-24 bg-shade1 transition duration-500 -translate-x-5 group-hover:translate-x-0"></div>
+        <div className="h-[2px] w-24 bg-shade1  transition duration-500"></div>
       </div>
       {isOpen && (
         <ul className="bg-shade3 group overflow-y-scroll absolute top-0 left-0 right-0 h-screen  text-6xl md:text-7xl lg:text-8xl font-medium flex flex-col  gap-2 md:gap-4  px-8 pt-20">
