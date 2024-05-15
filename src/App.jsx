@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="bg-shade3 min-h-screen font-inter">
       <Navbar />
-      <BlogContentPage />
+      <ProjectContentPage />
       <FooterSection />
     </div>
   );

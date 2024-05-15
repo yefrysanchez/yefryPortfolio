@@ -6,7 +6,10 @@ const BlogContentPage = () => {
 
   return (
     <main className="text-shade1  px-4 pt-32">
-      <a className="flex gap-2 mb-4 group  xl:max-w-[1300px] xl:mx-auto" href="/blogs">
+      <a
+        className="flex gap-2 mb-4 group  xl:max-w-[1300px] xl:mx-auto"
+        href="/blogs"
+      >
         <span>
           <i className="fa-solid fa-chevron-left"></i>
         </span>
@@ -16,16 +19,18 @@ const BlogContentPage = () => {
       </a>
 
       <div className="mb-12">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl xl:max-w-[1300px] xl:mx-auto uppercase tracking-tight mb-4 font-bold">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl xl:max-w-[1300px] xl:mx-auto uppercase tracking-tight mb-4 font-bold">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </h1>
-        <p className="uppercase text-3xl md:text-xl mb-8  xl:max-w-[1300px] xl:mx-auto">May 15, 2024</p>
-        <div className="h-[500px] lg:h-[700px] xl:h-[900px] rounded-3xl overflow-hidden">
-          <img className="w-full h-full object-cover" src={url} alt="" />
+        <p className="uppercase text-3xl md:text-xl mb-8  xl:max-w-[1300px] xl:mx-auto">
+          May 15, 2024
+        </p>
+        <div className="h-[500px] lg:h-[700px] xl:h-[900px] xl:max-w-[1600px] mx-auto rounded-3xl overflow-hidden">
+          <img className="w-full h-full object-cover" src={url} alt="project blog" />
         </div>
       </div>
 
-      <div className="text-xl xl:max-w-[1300px] xl:mx-auto">
+      <div className="text-xl xl:max-w-[1300px] xl:mx-auto mb-20">
         <p className="mb-12 text-shade1/85">
           In the competitive landscape of modern business, creating memorable
           brand experiences is essential for standing out in the minds of
@@ -35,7 +40,8 @@ const BlogContentPage = () => {
           with a brand presents an opportunity to make an impact. In this
           article, we explore the principles and strategies behind designing for
           impact and creating lasting impressions that resonate with audiences.
-        </p><p className="mb-12 text-shade1/85">
+        </p>
+        <p className="mb-12 text-shade1/85">
           In the competitive landscape of modern business, creating memorable
           brand experiences is essential for standing out in the minds of
           consumers. Design plays a pivotal role in shaping these experiences,
@@ -44,7 +50,8 @@ const BlogContentPage = () => {
           with a brand presents an opportunity to make an impact. In this
           article, we explore the principles and strategies behind designing for
           impact and creating lasting impressions that resonate with audiences.
-        </p><p className="mb-12 text-shade1/85">
+        </p>
+        <p className=" text-shade1/85">
           In the competitive landscape of modern business, creating memorable
           brand experiences is essential for standing out in the minds of
           consumers. Design plays a pivotal role in shaping these experiences,
