@@ -1,50 +1,63 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useRef } from "react";
+
 const FooterSection = () => {
+  const container = useRef();
+  const texts = useRef([]);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end end"],
+  });
+  
+
+  useEffect(() => {
+    scrollYProgress.on("change", (e) => {
+      texts.current.forEach((text, i) => {
+        text.setAttribute("startOffset", -40 + i * 40 + e * 40 + "%");
+      });
+    });
+  }, []);
+
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 0])
+
   return (
-    <footer className="text-shade1 flex flex-col lg:flex-row lg:h-[412px] h-screen border-t border-t-shade2/50">
-      <div className="lg:border-r lg:border-r-shade2/50 lg:border-b border-b-shade2/50 lg:h-auto h-[80%]">
-        <div className="lg:p-12 pt-8 px-4 lg:w-[418px] h-[60%]">
-          <h1 className="flex flex-col tracking-tighter leading-[.7] text-[150px] font-bold select-none pt-20 lg:pt-0">
-            <span>YEF</span>
-
-            <span className="tracking-normal pl-4"> RY</span>
-          </h1>
+    <footer ref={container} className="text-shade1 ">
+      <svg className="mb-40" viewBox="0 0 250 90">
+        <path
+          id="curve"
+          fill="none"
+          stroke="none"
+          d="m0,88.5c61.37,0,61.5-68,126.5-68,58,0,51,68,123,68"
+        />
+        <text fill="white" className="text-[9px] font-bold uppercase">
+          {[...Array(3)].map((_, i) => {
+            return (
+              <textPath
+                ref={(ref) => (texts.current[i] = ref)}
+                key={i}
+                startOffset={i * 40 + "%"}
+                href="#curve"
+              >
+                let's work together! -
+              </textPath>
+            );
+          })}
+        </text>
+      </svg>
+      <div className="overflow-hidden bg-shade1">
+      <motion.div style={{y}} className="bg-shade1 h-[250px] flex items-center justify-center">
+        <div className="text-shade3 text-5xl flex gap-5 lg:gap-10">
+          <i className="fa-solid fa-house"></i>
+          <i className="fa-brands fa-linkedin"></i>
+          <i className="fa-solid fa-user"></i>
+          <i className="fa-brands fa-readme"></i>
+          <i className="fa-solid fa-envelope"></i>
         </div>
-      </div>
-
-      <div className=" lg:flex-auto">
-        <div className="lg:h-[80%] lg:border-b border-b-shade2/50 w-full relative px-4 lg:px-0 border-b pb-4 lg:pb-0">
-          <a
-            className="flex flex-col tracking-tighter leading-[.85] text-4xl font-medium lg:absolute lg:right-8 bottom-8 hover:text-shade2 transition duration-300"
-            href=""
-          >
-            <span>YEFRYMSP@</span>
-            <span>GMAIL.COM</span>
-          </a>
-        </div>
-
-        <div className="flex gap-8 text-2xl text-shade2 p-6">
-          <div className="">
-            <a
-              target="_blank"
-              className="mr-6 hover:text-shade1 transition duration-300"
-              href="https://www.linkedin.com/in/yefrysanchez/"
-            >
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-            <a
-              className="hover:text-shade1 transition duration-300"
-              target="_blank"
-              href="https://github.com/yefrysanchez"
-            >
-              <i className="fa-brands fa-github"></i>
-            </a>
-          </div>
-
-          <p className="tracking-tighter">2024</p>
-        </div>
+      </motion.div>
       </div>
     </footer>
   );
 };
 
 export default FooterSection;
+
