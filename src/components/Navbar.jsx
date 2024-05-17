@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <nav className="z-50 fixed w-full top-0 text-shade1 bg-shade3/30 h-24 flex justify-between items-center ">
       <div className="font-bold tracking-[-5px] text-6xl w-fit">
-        <h1 className="flex flex-col select-none text-[40px]">
+        <h1 className="flex flex-col select-none text-[40px]  lg:pl-8">
           <span>YEFRY</span>
         </h1>
       </div>
@@ -106,7 +106,7 @@ const Navbar = () => {
               </div>
               {links.map((link, i) => (
                 <motion.li
-                  className="lg:hover:text-shade2"
+                  className="lg:hover:text-shade2 w-fit"
                   custom={i}
                   variants={slice}
                   animate="enter"
@@ -115,7 +115,7 @@ const Navbar = () => {
                   key={i}
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  {link.title}
+                  <Link to={link.href}>{link.title}</Link>
                 </motion.li>
               ))}
             </motion.ul>

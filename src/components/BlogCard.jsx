@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const BlogCard = () => {
   const url =
     "https://miro.medium.com/v2/resize:fit:800/1*VFStJoxV3Wa8Ees7ZtnN7A.png";
 
   return (
-    <a href="">
+    <Link to={"/blogs/blog"}>
       <div className="group lg:h-[550px] rounded-3xl overflow-hidden text-shade1 flex flex-col border border-shade2">
         <div className="h-full overflow-hidden">
           <img
@@ -16,7 +18,7 @@ const BlogCard = () => {
           Lorem ipsum dolor sit amet consectetur exercitationem?
         </p>
       </div>
-    </a>
+    </Link>
   );
 };
 

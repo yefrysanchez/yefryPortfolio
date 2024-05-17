@@ -56,7 +56,7 @@ const AboutPage = () => {
           </span>
           <span className="flex flex-col items-center">
             <i className="fa-brands fa-google"></i>
-            <span className="text-xl">GCP</span>
+            <span className="md:text-xl text-[3vw]">Google Cloud</span>
           </span>
           <span className="flex flex-col items-center">
             <i className="fa-solid fa-database"></i>

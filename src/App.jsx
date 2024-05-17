@@ -1,15 +1,9 @@
 import { useEffect } from "react";
 import "./App.css";
-import ContactPage from "./components/ContactPage";
 import FooterSection from "./components/FooterSection";
 import Navbar from "./components/Navbar";
-import AboutPage from "./pages/AboutPage";
-import BlogContentPage from "./pages/BlogContentPage";
-import BlogPage from "./pages/BlogPage";
-import HomePage from "./pages/HomePage";
-import ProjectContentPage from "./pages/ProjectContentPage";
-import ProjectPage from "./pages/ProjectPage";
 import Lenis from "lenis";
+import AppRouter from "./router/AppRouter";
 
 function App() {
   // https://blurr.framer.website/
@@ -28,7 +22,7 @@ function App() {
   return (
     <div className="bg-shade3 min-h-screen font-inter">
       <Navbar />
-      <AboutPage />
+      <AppRouter />
       <FooterSection />
     </div>
   );

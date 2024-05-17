@@ -1,14 +1,17 @@
 import RecommendedBlog from "../components/RecommendedBlog";
+import { Link } from "react-router-dom";
+
 
 const BlogContentPage = () => {
   const url =
     "https://images.unsplash.com/photo-1715645942867-4c8649966352?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
+
   return (
     <main className="text-shade1  px-4 pt-32">
-      <a
+      <Link
         className="flex gap-2 mb-4 group  xl:max-w-[1300px] xl:mx-auto"
-        href="/blogs"
+        to="/blogs"
       >
         <span>
           <i className="fa-solid fa-chevron-left"></i>
@@ -16,7 +19,7 @@ const BlogContentPage = () => {
         <span className="group-hover:translate-x-2 font-bold transition duration-300">
           BACK TO BLOG
         </span>
-      </a>
+      </Link>
 
       <div className="mb-12">
         <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl xl:max-w-[1300px] xl:mx-auto uppercase tracking-tight mb-4 font-bold">

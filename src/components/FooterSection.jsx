@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   const container = useRef();
@@ -18,7 +19,7 @@ const FooterSection = () => {
     });
   }, []);
 
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 0])
+  const y = useTransform(scrollYProgress, [0, 1], [-700, 0])
 
   return (
     <footer ref={container} className="text-shade1 ">
@@ -47,11 +48,11 @@ const FooterSection = () => {
       <div className="overflow-hidden bg-shade1">
       <motion.div style={{y}} className="bg-shade1 h-[250px] flex items-center justify-center">
         <div className="text-shade3 text-5xl flex gap-5 lg:gap-10">
-          <i className="fa-solid fa-house"></i>
-          <i className="fa-brands fa-linkedin"></i>
-          <i className="fa-solid fa-user"></i>
-          <i className="fa-brands fa-readme"></i>
-          <i className="fa-solid fa-envelope"></i>
+          <Link className="group" to={"/"}><i className="fa-solid fa-house group-hover:-translate-y-3 group-hover:transition duration-300"></i></Link>
+          <a className="group" target="_blank" href="https://www.linkedin.com/in/yefrysanchez/"><i className="fa-brands fa-linkedin group-hover:-translate-y-3 group-hover:transition duration-300"></i></a>
+          <Link className="group" to={"/about"}><i className="fa-solid fa-user group-hover:-translate-y-3 group-hover:transition duration-300"></i></Link>
+          <Link className="group" to={"/works"}><i className="fa-solid fa-folder group-hover:-translate-y-3 group-hover:transition duration-300"></i></Link>
+          <Link className="group" to={"/contact"}><i className="fa-solid fa-envelope group-hover:-translate-y-3 group-hover:transition duration-300"></i></Link>
         </div>
       </motion.div>
       </div>

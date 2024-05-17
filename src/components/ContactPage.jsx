@@ -20,7 +20,7 @@ const ContactPage = () => {
         <div className="mb-8 lg:flex-1">
           <p className="text-shade1/70 text-xl xl:text-2xl">
             Do you have a question about my work or a project in mind? I'd love
-            to hear from you! Feel free to use the contact form below, send me
+            to hear from you! Feel free to send me
             an email directly, or connect with me on social media. I'm always
             open to collaborating on creative projects.
           </p>

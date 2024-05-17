@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AboutSection = () => {
   return (
     <div className="px-4 text-shade1 lg:h-[1000px] 2xl:h-screen mb-12 flex flex-col items-center justify-center">
@@ -9,9 +11,9 @@ const AboutSection = () => {
           can bring your vision to life!
         </p>
       </div>
-      <div className="w-40 h-40 bg-shade2/15 rounded-full flex justify-center items-center ml-auto mr-8 mt-8 lg:ml-0 lg:mr-0 lg:mt-24">
+      <Link className="w-40 h-40 bg-shade2/15 hover:bg-shade1 hover:text-shade3 transition duration-300 rounded-full flex justify-center items-center ml-auto mr-8 mt-8 lg:ml-0 lg:mr-0 lg:mt-24">
         <span className="text-xl font-medium">About Me</span>
-      </div>
+      </Link>
     </div>
   );
 };
