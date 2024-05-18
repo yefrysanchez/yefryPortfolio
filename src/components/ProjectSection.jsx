@@ -1,16 +1,21 @@
-import ProjectCard from "./ProjectCard"
+
+import { fadeUp } from "../animations/animation"
+import StickyProject from "./StickyProject"
+import { motion } from "framer-motion"
 
 const ProjectSection = () => {
+
+
+  
   return (
-    <section className="min-h-screen px-4 lg:px-8 mb-12">
+    <motion.section variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="min-h-screen px-4 lg:px-8 mb-12">
         <h2 className="text-shade1 uppercase tracking-tighter text-[50px] lg:text-[100px] font-bold">Works</h2>
-        <div>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+        <div className="h-[300vh]">
+            <StickyProject />
+            <StickyProject />
+            <StickyProject />
         </div>
-    </section>
+    </motion.section>
   )
 }
 

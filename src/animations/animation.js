@@ -1,3 +1,5 @@
+import { stagger } from "framer-motion"
+
 export const menuSlide = {
     initial: {
         x: "100%"
@@ -40,4 +42,17 @@ export const fade = {
         opacity: 0,
         transition: {duration: 0.8, ease: [0.76,0, 0.24, 1]}
     }
+}
+
+export const fadeUp = {
+    initial: {
+        opacity: 0,
+        y: 250
+    },
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: {duration: 1.3, ease: [0.25, 1, 0.5, 1]}
+    },
+  
 }
