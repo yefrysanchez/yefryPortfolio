@@ -1,13 +1,19 @@
+
+
+
 const ProjectContentPage = () => {
 
   const url = "https://images.unsplash.com/photo-1715276611597-048987ab7d97?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+
+
 
   return (
     <div className="pt-32 text-shade1 px-4">
       <div className="mb-16">
         <a
           className="flex gap-2 mb-4 group  xl:max-w-[1300px] xl:mx-auto"
-          href="/blogs"
+          href="/works"
         >
           <span>
             <i className="fa-solid fa-chevron-left"></i>

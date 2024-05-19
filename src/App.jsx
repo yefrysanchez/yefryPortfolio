@@ -4,6 +4,7 @@ import FooterSection from "./components/FooterSection";
 import Navbar from "./components/Navbar";
 import Lenis from "lenis";
 import AppRouter from "./router/AppRouter";
+import ScrollRestoration from "./components/ScrollRestoration";
 
 function App() {
   // https://blurr.framer.website/
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div className="bg-shade3 min-h-screen font-inter">
+      <ScrollRestoration />
       <Navbar />
       <AppRouter />
       <FooterSection />

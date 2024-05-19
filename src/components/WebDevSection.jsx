@@ -9,11 +9,11 @@ const WebDevSection = () => {
       <motion.h2 variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="flex flex-col">
         <span>Web</span> <span>Developer</span>
       </motion.h2>
-      <div className="h-4 w-32 my-8 bg-shade2 lg:hidden"></div>
+      <motion.div variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="h-4 w-32 my-8 bg-shade2 lg:hidden"></motion.div>
       <h2 className="text-shade2 flex flex-col">
         <motion.span variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="lg:flex items-center">
           <div className="h-4 w-32 lg:h-3 lg:w-48 my-8 bg-shade2 hidden lg:inline-block"></div>
-          Based on
+          Based in
         </motion.span>{" "}
         <span className="ml-auto lg:ml-0 pr-5 flex flex-row-reverse xl:flex-row xl:gap-8"><motion.span viewport={{once:true}} variants={fadeUp} initial="initial" whileInView={"animate"}>NYC</motion.span> <motion.span variants={fadeUp} initial="initial" whileInView={"animate"} viewport={{once:true}} className="overflow-hidden rounded-full"><img className="h-[16vw] w-[16vw] lg:w-[150px] lg:h-[150px] xl:h-[170px] xl:w-[490px]  object-cover scale-150 md:scale-125 xl:scale-100 xl:object-[center_-80px]" src="/profile.jpeg" alt="profile image" /></motion.span></span>
       </h2>
