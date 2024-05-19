@@ -8,14 +8,14 @@ const AboutPage = () => {
     <main className="pt-[124px] px-[40px] pb-4 md:px-8 ">
       <section className="xl:flex relative xl:min-h-screen ">
         <div className="text-shade1 flex-1 z-10 xl:w-1/2 2xl:w-1/3 mb-12">
-          <h1 className="text-[70px] lg:text-[100px] xl:text-[240px]  uppercase tracking-tighter flex flex-col leading-[0.9] font-semibold mb-12">
+          <motion.h1 variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="text-[70px] lg:text-[100px] xl:text-[240px]  uppercase tracking-tighter flex flex-col leading-[0.9] font-semibold mb-12">
             <span className="flex items-center xl:w-[997px]">
               Yefry{" "}
               <div className="h-2 w-16 xl:h-8 xl:w-44 mx-4 bg-shade1 inline-block"></div>
             </span>
             <span>Sanchez</span>
-          </h1>
-          <p className="text-2xl flex flex-col gap-4 xl:pr-4">
+          </motion.h1>
+          <motion.p variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="text-2xl flex flex-col gap-4 xl:pr-4">
             <span>Passionate Front-end Developer dedicated to crafting intuitive user
             interfaces. With a focus on blending design and functionality, I
             transform concepts into responsive and engaging websites.</span>
@@ -24,15 +24,15 @@ const AboutPage = () => {
             and drive innovation in web development. I love baseball, video
             games, producing music, and all about computers from hardware to
             software. I am passionate about technology in general.</span>
-          </p>
+          </motion.p>
         </div>
-        <div className="xl:w-1/2 2xl:w-2/3 xl:h-[960px]">
+        <motion.div variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="xl:w-1/2 2xl:w-2/3 xl:h-[960px]">
           <img
             className="rounded-3xl w-full h-full object-cover 2xl:object-[center_-250px]"
             src="/profile.jpeg"
             alt="about image"
           />
-        </div>
+        </motion.div>
       </section>
       <section className="my-40 ">
         <motion.h2 variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="text-[50px] text-shade1 lg:text-[100px]  uppercase tracking-tighter leading-[0.9] font-semibold my-20 lg:text-center">

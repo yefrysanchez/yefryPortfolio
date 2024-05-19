@@ -1,15 +1,14 @@
 import RecommendedBlog from "../components/RecommendedBlog";
 import { Link, useParams } from "react-router-dom";
 import { blogs } from "../data/blogdata";
-
+import { motion } from "framer-motion";
+import { fadeUp } from "../animations/animation";
 
 const BlogContentPage = () => {
-  
   const { blog } = useParams();
-  const data = blogs.find((dataBlog) => dataBlog.title.replace(" ","") === blog);
-
-
- 
+  const data = blogs.find(
+    (dataBlog) => dataBlog.title.replace(" ", "") === blog
+  );
 
   return (
     <main className="text-shade1  px-4 pt-32">
@@ -26,25 +25,67 @@ const BlogContentPage = () => {
       </Link>
 
       <div className="mb-12">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl xl:max-w-[1300px] xl:mx-auto uppercase tracking-tight mb-4 font-bold">
+        <motion.h1
+          variants={fadeUp}
+          initial="initial"
+          viewport={{ once: true }}
+          whileInView={"animate"}
+          className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl xl:max-w-[1300px] xl:mx-auto uppercase tracking-tight mb-4 font-bold"
+        >
           {data.title}
-        </h1>
-        <p className="uppercase text-3xl md:text-xl mb-8  xl:max-w-[1300px] xl:mx-auto">
+        </motion.h1>
+        <motion.p
+          variants={fadeUp}
+          initial="initial"
+          viewport={{ once: true }}
+          whileInView={"animate"}
+          className="uppercase text-3xl md:text-xl mb-8  xl:max-w-[1300px] xl:mx-auto"
+        >
           {data.date}
-        </p>
-        <div className="h-[500px] lg:h-[700px] xl:h-[900px] xl:max-w-[1600px] mx-auto rounded-3xl overflow-hidden">
+        </motion.p>
+        <motion.div
+          variants={fadeUp}
+          initial="initial"
+          viewport={{ once: true }}
+          whileInView={"animate"}
+          className="h-[500px] lg:h-[700px] xl:h-[900px] xl:max-w-[1600px] mx-auto rounded-3xl overflow-hidden"
+        >
           <img
             className="w-full h-full object-cover"
             src={data.img}
             alt="blog img"
           />
-        </div>
+        </motion.div>
       </div>
 
       <div className="text-xl xl:max-w-[1300px] xl:mx-auto mb-20">
-        <p className="mb-12 text-shade1/85">{data.para1}</p>
-        <p className="mb-12 text-shade1/85">{data.para1}</p>
-        <p className=" text-shade1/85">{data.para1}</p>
+        <motion.p
+          variants={fadeUp}
+          initial="initial"
+          viewport={{ once: true }}
+          whileInView={"animate"}
+          className="mb-12 text-shade1/85"
+        >
+          {data.para1}
+        </motion.p>
+        <motion.p
+          variants={fadeUp}
+          initial="initial"
+          viewport={{ once: true }}
+          whileInView={"animate"}
+          className="mb-12 text-shade1/85"
+        >
+          {data.para1}
+        </motion.p>
+        <motion.p
+          variants={fadeUp}
+          initial="initial"
+          viewport={{ once: true }}
+          whileInView={"animate"}
+          className=" text-shade1/85"
+        >
+          {data.para1}
+        </motion.p>
       </div>
       <RecommendedBlog />
     </main>

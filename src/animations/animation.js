@@ -1,4 +1,3 @@
-import { stagger } from "framer-motion"
 
 export const menuSlide = {
     initial: {

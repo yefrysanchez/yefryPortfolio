@@ -1,6 +1,8 @@
 import BlogCard from "./BlogCard";
 import { blogs } from "../data/blogdata";
 import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import { fadeUp } from "../animations/animation";
 
 const RecommendedBlog = () => {
   const { blog } = useParams();
@@ -9,15 +11,27 @@ const RecommendedBlog = () => {
   return (
     <div className="mb-12">
       <div className="mb-8">
-        <h2 className="text-3xl tracking-tighter font-bold md:text-5xl">
+        <motion.h2
+          variants={fadeUp}
+          initial="initial"
+          viewport={{ once: true }}
+          whileInView={"animate"}
+          className="text-3xl tracking-tighter font-bold md:text-5xl"
+        >
           YOU MIGHT ALSO LIKE
-        </h2>
+        </motion.h2>
       </div>
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+      <motion.div
+        variants={fadeUp}
+        initial="initial"
+        viewport={{ once: true }}
+        whileInView={"animate"}
+        className="grid md:grid-cols-2 xl:grid-cols-3 gap-8"
+      >
         {filteredBlog.map((e, i) => (
           <BlogCard img={e.img} title={e.title.replace(" ", "")} key={i} />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
