@@ -1,10 +1,22 @@
 import { Link } from "react-router-dom";
+import { MyCursorContext } from "../context/CursorContext";
+import { useContext } from "react";
 
 const BlogCard = ({title,img}) => {
 
 
+  const {setIsActive} = useContext(MyCursorContext)
+
+  const onMouseEnter = () => {
+    setIsActive(true)
+  }
+  const onMouseLeave = () => {
+    setIsActive(false)
+  }
+
+
   return (
-    <Link to={`/blogs/${title}`}>
+    <Link onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} to={`/blogs/${title}`}>
       <div className="group lg:h-[550px] rounded-3xl overflow-hidden text-shade1 flex flex-col border border-shade2">
         <div className="h-full overflow-hidden">
           <img

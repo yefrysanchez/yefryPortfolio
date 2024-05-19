@@ -30,7 +30,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="z-50 fixed w-full top-0 text-shade1 bg-shade3/30 h-24 flex justify-between items-center ">
+    <nav className="z-40 fixed w-full top-0 text-shade1 bg-shade3/30 h-24 flex justify-between items-center ">
       <div className="font-bold tracking-[-5px] text-6xl w-fit">
         <h1 className="flex flex-col select-none text-[40px]  lg:pl-8">
           <span>YEFRY</span>
@@ -38,7 +38,7 @@ const Navbar = () => {
       </div>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="h-full w-[125px] flex flex-col justify-end bg-shade2/20 hover:bg-shade2/0 transition cursor-pointer p-[10px] group"
+        className="h-full w-[125px] flex flex-col justify-end bg-shade2/20 hover:bg-shade2/0 transition p-[10px] group"
       >
         <div className="transition w-[125px] group translate-x-[100%] group-hover:translate-x-0 bg-shade1 absolute top-0 right-0 bottom-0 -z-10"></div>
 
@@ -86,7 +86,7 @@ const Navbar = () => {
                 onClick={() => {
                   setIsOpen(!isOpen);
                 }}
-                className="absolute top-5 right-5 cursor-pointer "
+                className="absolute top-5 right-5"
               >
                 <motion.svg
                   variants={slice}

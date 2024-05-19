@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Lenis from "lenis";
 import AppRouter from "./router/AppRouter";
 import ScrollRestoration from "./components/ScrollRestoration";
+import Cursor from "./components/Cursor";
+import CursorContextData from "./context/CursorContext";
 
 function App() {
   // https://blurr.framer.website/
@@ -21,10 +23,13 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-shade3 min-h-screen font-inter">
+    <div className="bg-shade3 min-h-screen font-inter lg:cursor-none">
       <ScrollRestoration />
-      <Navbar />
-      <AppRouter />
+      <CursorContextData>
+        <Cursor />
+        <Navbar />
+        <AppRouter />
+      </CursorContextData>
       <FooterSection />
     </div>
   );
