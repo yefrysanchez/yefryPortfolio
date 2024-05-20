@@ -73,7 +73,7 @@ console.log(isActive)
 
       }}
 
-      className={`top-0 left-0 fixed rounded-full z-50 pointer-events-none border`} 
+      className={`top-0 left-0 fixed rounded-full z-50 pointer-events-none border hidden lg:block`} 
 
   ><div className={`transition-all duration-200 ${isActive ? "flex justify-center items-center text-7xl h-[200px] w-[200px]" : "mix-blend-difference w-[30px] h-[30px]"}`}>
     {

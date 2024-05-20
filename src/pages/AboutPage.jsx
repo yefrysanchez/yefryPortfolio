@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
+import ScrollRestoration from "../components/ScrollRestoration";
 
 const AboutPage = () => {
 
   
-  return (
+  return (<><ScrollRestoration />
     <main className="pt-[124px] px-[40px] pb-4 md:px-8 ">
       <section className="xl:flex relative xl:min-h-screen ">
         <div className="text-shade1 flex-1 z-10 xl:w-1/2 2xl:w-1/3 mb-12">
@@ -85,7 +86,7 @@ const AboutPage = () => {
             <motion.a variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} target="_blank" href="https://www.coursera.org/account/accomplishments/verify/VWMAQRSDT53A" className=" transition  border-b py-20 flex items-center justify-between group lg:text-4xl lg:px-6"><span className="lg:group-hover:translate-x-8 transition ">Google: Technical Support Fundamentals</span><span> <i className="fa-solid fa-arrow-right text-shade1 bg-[#1C1D20] group-hover:bg-[#455CE9] transition p-4 rounded-full lg:group-hover:-translate-x-8"></i></span></motion.a>
             </div>
         </section>
-    </main>
+    </main></>
   );
 };
 

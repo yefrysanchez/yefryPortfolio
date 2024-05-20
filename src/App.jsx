@@ -23,9 +23,9 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-shade3 min-h-screen font-inter lg:cursor-none">
-      <ScrollRestoration />
+    <div className="bg-shade3 min-h-screen font-inter ">
       <CursorContextData>
+        <ScrollRestoration />
         <Cursor />
         <Navbar />
         <AppRouter />

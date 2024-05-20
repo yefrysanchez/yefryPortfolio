@@ -32,7 +32,7 @@ const ProjectCard = () => {
         src={url}
         alt="project image"
       />
-      <p className=" text-shade1 z-10 tracking-tighter leading-[0.9] absolute left-4 xl:left-6 bottom-4 xl:bottom-6 group-hover:translate-y-0 translate-y-14 opacity-0 group-hover:opacity-100  transition duration-500 uppercase text-[7vw] lg:text-5xl xl:text-6xl font-bold">
+      <p className=" text-shade1 z-10 tracking-tighter leading-[0.9] absolute left-4 xl:left-6 bottom-4 xl:bottom-6 group-hover:translate-y-0 lg:translate-y-14 lg:opacity-0 group-hover:opacity-100  transition duration-500 uppercase text-[7vw] lg:text-5xl xl:text-6xl font-bold">
         Project Title
       </p>
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-shade3 opacity-0 group-hover:opacity-40 transition duration-300"></div>
