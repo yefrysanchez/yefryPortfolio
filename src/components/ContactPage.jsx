@@ -7,7 +7,7 @@ const ContactPage = () => {
   
   
     return (
-    <main className="px-4 lg:px-8">
+    <main className="px-4 lg:px-8 mx-auto max-w-[2550px]">
       <div className="pt-28 text-shade1 mb-12">
         <motion.h1 variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="tracking-tighter uppercase text-8xl lg:text-[140px] xl:text-[240px] font-semibold mb-8">
           get in touch.

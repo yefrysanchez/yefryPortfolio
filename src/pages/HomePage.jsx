@@ -5,7 +5,7 @@ import WebDevSection from "../components/WebDevSection"
 
 const HomePage = () => {
   return (
-    <main className="">
+    <main className="mx-auto max-w-[2550px]">
       <Hero />
       <WebDevSection/>
       <AboutSection />

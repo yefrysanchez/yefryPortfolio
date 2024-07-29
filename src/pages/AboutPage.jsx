@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <>
       <ScrollRestoration />
-      <main className="pt-[124px] px-[40px] pb-4 md:px-8 ">
+      <main className="pt-[124px] px-[40px] pb-4 md:px-8 mx-auto max-w-[2550px]">
         <section className="xl:flex relative xl:min-h-screen ">
           <div className="text-shade1 flex-1 z-10 xl:w-1/2 2xl:w-1/3 mb-12">
             <motion.h1

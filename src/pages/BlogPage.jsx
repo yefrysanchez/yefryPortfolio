@@ -5,7 +5,7 @@ import { fadeUp } from "../animations/animation";
 
 const BlogPage = () => {
   return (
-    <main className="text-shade1 pt-24 px-4 min-h-screen">
+    <main className="text-shade1 pt-24 px-4 min-h-screen mx-auto max-w-[2550px]">
       <motion.h1
         variants={fadeUp}
         initial="initial"

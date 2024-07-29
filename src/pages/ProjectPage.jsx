@@ -12,7 +12,7 @@ const ProjectPage = () => {
       initial="initial"
       viewport={{ once: true }}
       whileInView={"animate"}
-      className="min-h-screen px-4 lg:px-8 mb-12 pt-24"
+      className="min-h-screen px-4 lg:px-8 mb-12 pt-24 mx-auto max-w-[2550px]"
     >
       <h2 className="text-shade1 select-none uppercase tracking-tighter text-[50px] lg:text-[100px] 2xl:text-[18vw] font-bold">
         Works
