@@ -3,12 +3,20 @@ import { Link, useParams } from "react-router-dom";
 import { blogs } from "../data/blogdata";
 import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
+import { useContext, useEffect } from "react";
+import { MyCursorContext } from "../context/CursorContext";
 
 const BlogContentPage = () => {
   const { blog } = useParams();
   const data = blogs.find(
     (dataBlog) => dataBlog.title.replace(" ", "") === blog
   );
+
+  const { setIsActive } = useContext(MyCursorContext);
+
+  useEffect(() => {
+    setIsActive(false);
+  }, []);
 
   return (
     <main className="text-shade1  px-4 pt-32">

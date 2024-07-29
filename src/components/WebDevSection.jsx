@@ -5,7 +5,7 @@ const WebDevSection = () => {
 
 
   return (
-    <section className="min-h-screen px-4 py-12 text-shade1 text-[15vw] lg:text-[180px] xl:text-[200px] uppercase font-semibold flex flex-col justify-center lg:items-center tracking-tighter leading-[0.8]">
+    <section className="min-h-screen px-4 py-12 text-shade1 text-[15vw] lg:text-[180px] xl:text-[200px] uppercase font-semibold flex flex-col justify-center lg:items-center tracking-tighter leading-[0.8] select-none">
       <motion.h2 variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="flex flex-col">
         <span>Web</span> <span>Developer</span>
       </motion.h2>

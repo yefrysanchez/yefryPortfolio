@@ -38,9 +38,9 @@ const Navbar = () => {
       </div>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="h-full w-[125px] flex flex-col justify-end bg-shade2/20 hover:bg-shade2/0 transition p-[10px] group"
+        className="h-full w-[125px] flex flex-col justify-end bg-shade2/20 hover:bg-shade2/0 transition p-[10px] group cursor-pointer"
       >
-        <div className="transition w-[125px] group translate-x-[100%] group-hover:translate-x-0 bg-shade1 absolute top-0 right-0 bottom-0 -z-10"></div>
+        <div className="transition w-[125px] group translate-x-[100%] group-hover:translate-x-0 bg-shade1 absolute top-0 right-0 bottom-0 -z-10 "></div>
 
         <svg
           className=""
@@ -86,7 +86,7 @@ const Navbar = () => {
                 onClick={() => {
                   setIsOpen(!isOpen);
                 }}
-                className="absolute top-5 right-5"
+                className="absolute top-5 right-5 cursor-pointer"
               >
                 <motion.svg
                   variants={slice}
