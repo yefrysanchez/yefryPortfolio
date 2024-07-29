@@ -4,7 +4,7 @@ import { fadeUp } from "../animations/animation";
 
 const AboutSection = () => {
   return (
-    <div className="px-4 text-shade1 lg:h-[1000px] 2xl:h-screen mb-12 flex flex-col items-center justify-center">
+    <div className="px-4 text-shade1 h-screen mb-12 flex flex-col items-center justify-center">
       <div className="">
         <motion.p
           variants={fadeUp}
@@ -19,17 +19,18 @@ const AboutSection = () => {
           life!
         </motion.p>
       </div>
-      <motion.div variants={fadeUp}
+      <motion.div className="mt-12 ml-auto md:ml-0 mr-8 md:mr-0 flex justify-center" variants={fadeUp}
           initial="initial"
           viewport={{ once: true }}
           whileInView={"animate"}>
+        
         <Link
           to={"/about"}
           variants={fadeUp}
           initial="initial"
           viewport={{ once: true }}
           whileInView={"animate"}
-          className="w-40 h-40 bg-shade2/15 hover:bg-shade1 hover:text-shade3 transition duration-300 rounded-full flex justify-center items-center ml-auto mr-8 mt-8 lg:ml-0 lg:mr-0 lg:mt-24"
+          className="w-40 h-40 bg-shade2/15 hover:bg-shade1 hover:text-shade3 transition duration-300 rounded-full flex justify-center items-center"
         >
           <span className="text-xl font-medium">About Me</span>
         </Link>
