@@ -55,3 +55,48 @@ export const fadeUp = {
     },
   
 }
+
+export const sliceUp = {
+    initial: {
+        y: "-300%",
+        opacity: 0,
+
+    },
+    animate: {
+        opacity: 1,
+
+        y: "0%",
+        transition: {duration: 3, ease: [0.25, 1, 0.5, 1]}
+    },
+  
+}
+export const sliceUp2 = {
+    initial: {
+        y: "-300%",
+        opacity: 0,
+
+    },
+    animate: {
+        opacity: 1,
+
+        y: "0%",
+        transition: {duration: 4.3, ease: [0.25, 1, 0.5, 1]}
+    },
+  
+}
+
+export const scaleX = {
+    initial: {
+        scaleX: 0,
+     
+
+    },
+    animate: {
+
+
+        scaleX: 1,
+        transition: {duration: 4.3, ease: [0.25, 1, 0.5, 1]}
+    },
+  
+}
+
