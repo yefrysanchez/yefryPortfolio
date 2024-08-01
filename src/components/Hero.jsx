@@ -6,13 +6,13 @@ const Hero = () => {
     <section className="h-screen text-shade1 tracking-[-6px] lg:tracking-[-10px] font-bold flex flex-col justify-center items-center text-7xl md:text-8xl lg:text-[180px]">
       <motion.div variants={fade} animate="enter" initial="initial">
         <p className="text-xl md:text-2xl lg:text-3xl tracking-tighter text-shade2 italic">
-          Hello, I'm
+          Hello, I&apos;m
         </p>
       </motion.div>
       {/* firstname */}
       <h1 className="relative overflow-hidden">
         <motion.div variants={sliceUp} animate="animate" initial="initial">
-          <span>YEFRY</span>
+          <span className="p-1">YEFRY</span>
           <span className="absolute top-0 left-0 translate-y-[100%]">
             YEFRY
           </span>

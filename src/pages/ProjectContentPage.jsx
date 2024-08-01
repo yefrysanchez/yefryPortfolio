@@ -101,7 +101,7 @@ const ProjectContentPage = () => {
           initial="initial"
           viewport={{ once: true }}
           whileInView={"animate"}
-          className="rounded-3xl overflow-hidden h-[300px] md:h-[500px]"
+          className="rounded-3xl overflow-hidden h-[300px] md:h-[500px] select-none"
         >
           <video
             autoPlay
@@ -115,7 +115,7 @@ const ProjectContentPage = () => {
           initial="initial"
           viewport={{ once: true }}
           whileInView={"animate"}
-          className="rounded-3xl overflow-hidden h-[300px] md:h-[500px]"
+          className="rounded-3xl overflow-hidden h-[300px] md:h-[500px] select-none"
         >
           <video
             autoPlay

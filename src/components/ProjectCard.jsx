@@ -34,7 +34,7 @@ const ProjectCard = () => {
           src={url}
           alt="project image"
         />
-        <div className="z-50 absolute left-4 bottom-4 md:left-6 md:bottom-6 lg:left-8 lg:bottom-8">
+        <div className="z-10 absolute left-4 bottom-4 md:left-6 md:bottom-6 lg:left-8 lg:bottom-8">
           <p className=" text-shade1 z-10 tracking-tighter leading-[0.9] text-3xl md:text-4xl lg:text-5xl uppercase font-bold">
             Project Title
           </p>
