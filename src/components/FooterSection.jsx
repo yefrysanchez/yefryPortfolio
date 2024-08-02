@@ -39,7 +39,7 @@ const FooterSection = () => {
                 startOffset={i * 40 + "%"}
                 href="#curve"
               >
-                let's work together! -
+                let&apos;s work together! -
               </textPath>
             );
           })}

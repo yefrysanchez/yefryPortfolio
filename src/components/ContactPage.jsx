@@ -24,9 +24,9 @@ const ContactPage = () => {
       <div className="lg:flex gap-8 max-w-[1300px] lg:mx-auto mb-12">
         <div className="mb-8 lg:flex-1">
           <motion.p variants={fadeUp} initial="initial" viewport={{once:true}} whileInView={"animate"} className="text-shade1/70 text-xl xl:text-2xl">
-            Do you have a question about my work or a project in mind? I'd love
+            Do you have a question about my work or a project in mind? I&apos;d love
             to hear from you! Feel free to send me
-            an email directly, or connect with me on social media. I'm always
+            an email directly, or connect with me on social media. I&apos;m always
             open to collaborating on creative projects.
           </motion.p>
         </div>

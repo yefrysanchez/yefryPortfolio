@@ -1,7 +1,6 @@
 
 import { motion } from "framer-motion";
-
-
+import PropTypes from "prop-types"
 
 const DURATION = 0.25;
 const STAGGER = 0.025;
@@ -66,3 +65,8 @@ export const FlipLink = ({ children}) => {
     </motion.div>
   );
 };
+
+
+FlipLink.propTypes = {
+  children: PropTypes.string.isRequired
+}
