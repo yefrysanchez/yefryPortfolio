@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { fade, menuSlide, slice } from "../animations/animation";
+import { FlipLink } from "./FlipLink";
 
 const Navbar = () => {
   const links = [
@@ -83,7 +84,7 @@ const Navbar = () => {
               animate="enter"
               exit="exit"
               initial="initial"
-              className="bg-shade1 text-shade3 z-30 group absolute top-0 right-0 h-screen  text-6xl md:text-7xl 2xl:text-8xl font-medium flex flex-col w-full lg:w-[40%] 2xl:w-[30%] gap-2 md:gap-4 px-8 pt-20"
+              className="bg-shade1 text-shade3 z-30 group absolute top-0 right-0 h-screen text-5xl sm:text-6xl md:text-7xl 2xl:text-9xl font-medium flex flex-col w-full lg:w-[40%] 2xl:w-[50%] gap-2 md:gap-4 px-8 pt-20"
             >
               <div
                 onClick={() => {
@@ -107,20 +108,11 @@ const Navbar = () => {
                   <path d="M66.5 1L0.999997 66.5" stroke="black" />
                 </motion.svg>
               </div>
-              {links.map((link, i) => (
-                <motion.li
-                  className="lg:hover:text-shade2 w-fit"
-                  custom={i}
-                  variants={slice}
-                  animate="enter"
-                  exit="exit"
-                  initial="initial"
-                  key={i}
-                  onClick={() => setIsOpen(!isOpen)}
-                >
-                  <Link to={link.href}>{link.title}</Link>
-                </motion.li>
-              ))}
+             {links.map((link, i) => (
+              <Link onClick={() => setIsOpen(false)} to={link.href} key={i}>
+                <FlipLink>{link.title}</FlipLink>
+              </Link>
+             ))}
             </motion.ul>
             <motion.div
               onClick={() => setIsOpen(!isOpen)}
