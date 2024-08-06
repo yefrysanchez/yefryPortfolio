@@ -103,12 +103,9 @@ const ProjectContentPage = () => {
           whileInView={"animate"}
           className="rounded-3xl overflow-hidden h-[300px] md:h-[500px] select-none"
         >
-          <video
-            autoPlay
-            loop
-            className="h-full w-full object-cover"
-            src="https://media.istockphoto.com/id/1444290062/video/dramatic-aerial-view-of-the-statue-of-liberty-and-nyc-skyline-at-dawn.mp4?s=mp4-640x640-is&k=20&c=SEwKZXkGSod44SGFZ0r8wL3ZWqM7ZTxYzaYX0njhkQo="
-          ></video>
+          <video autoPlay playsInline muted loop className="h-full w-full object-cover" >
+            <source src="https://media.istockphoto.com/id/1444290062/video/dramatic-aerial-view-of-the-statue-of-liberty-and-nyc-skyline-at-dawn.mp4?s=mp4-640x640-is&k=20&c=SEwKZXkGSod44SGFZ0r8wL3ZWqM7ZTxYzaYX0njhkQo=" />
+          </video>
         </motion.div>
         <motion.div
           variants={fadeUp}
@@ -117,12 +114,9 @@ const ProjectContentPage = () => {
           whileInView={"animate"}
           className="rounded-3xl overflow-hidden h-[300px] md:h-[500px] select-none"
         >
-          <video
-            autoPlay
-            loop
-            className="h-full w-full object-cover"
-            src="https://videos.pexels.com/video-files/3999358/3999358-uhd_3840_2160_24fps.mp4"
-          ></video>
+          <video autoPlay playsInline muted loop className="h-full w-full object-cover">
+            <source src="https://videos.pexels.com/video-files/3999358/3999358-uhd_3840_2160_24fps.mp4" />
+          </video>
         </motion.div>
       </div>
     </div>
