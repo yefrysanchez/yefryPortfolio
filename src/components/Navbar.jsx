@@ -75,7 +75,7 @@ const Navbar = () => {
 
         <p className="group-hover:text-shade3 transition-colors">MENU</p>
       </div>
-
+{/* Links Container UL */}
       <AnimatePresence>
         {isOpen && (
           <>
@@ -108,12 +108,17 @@ const Navbar = () => {
                   <path d="M66.5 1L0.999997 66.5" stroke="black" />
                 </motion.svg>
               </div>
+            {/* Links  */}
              {links.map((link, i) => (
-              <Link onClick={() => setIsOpen(false)} to={link.href} key={i}>
+              <motion.li variants={slice} animate="enter" initial="initial" exit="exit" custom={i} className="w-fit" key={i}>
+                <Link onClick={() => setIsOpen(false)} to={link.href} >
                 <FlipLink>{link.title}</FlipLink>
               </Link>
+              </motion.li>
              ))}
+
             </motion.ul>
+
             <motion.div
               onClick={() => setIsOpen(!isOpen)}
               variants={fade}
