@@ -28,7 +28,7 @@ I'm a Web Developer with a passion for Front-End Development. I build visually s
 
 ### EduHub
 - **Description:** EduHub is a comprehensive student dashboard app designed to streamline your academic experience. It integrates course schedules, grades, assignments, and communication tools into one intuitive platform, helping you stay organized and on top of your educational goals. With real-time updates and personalized insights, EduHub makes managing your studies simpler and more efficient.
-- **Technologies Used:** Next, Typescript, Node.js, Express.js, Postgres.
+- **Technologies Used:** Next, Typescript, Node.js, Express.js, Postgres, and Railway.
 - **Link:** Still Working on it.
 
 ### CodeVenue
@@ -36,7 +36,7 @@ I'm a Web Developer with a passion for Front-End Development. I build visually s
   the soothing sounds of Lofi music. Designed with developers in mind, our
   platform offers a curated selection of Lofi beats to enhance your coding
   sessions and foster productivity.
-- **Technologies Used:** React, Typescript, Node.js, Express.js, MongoDB.
+- **Technologies Used:** React, Typescript, Node.js, Express.js, MongoDB, and Google Cloud.
 - **Link:** Still working on it.
 
 ### Rulay
