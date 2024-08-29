@@ -34,10 +34,10 @@ const Navbar = () => {
     <nav className="z-40 fixed w-full top-0 text-shade1 bg-shade3/30 h-24 flex justify-between items-center ">
       <div className="font-bold tracking-[-5px] text-6xl w-fit ml-4">
         <Link to={"/"}>
-          <h1 className="flex flex-col select-none text-[35px] leading-6  text-center lg:pl-8">
+          <h3 className="flex flex-col select-none text-[35px] leading-6  text-center lg:pl-8">
             <span>YEF</span>
             <span>RY</span>
-          </h1>
+          </h3>
         </Link>
       </div>
       <div
