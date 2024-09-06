@@ -20,15 +20,15 @@ I'm a Web Developer with a passion for Front-End Development. I build visually s
 
 - **Programming Languages:** [JavaScript, Typescript, HTML, CSS]
 - **Frameworks/Libraries:** [React, Node.js, Express.js, Tailwind CSS]
-- **Tools:** [Git, Docker, VS Code, Vite]
+- **Tools:** [Git, Docker, VS Code, Vite, Redux, Zustand]
 - **Databases:** [MongoDB, PostgreSQL]
 - **Cloud:** [Google Cloud, AWS]
 
 ## Projects
 
-### EduHub
-- **Description:** EduHub is a comprehensive student dashboard app designed to streamline your academic experience. It integrates course schedules, grades, assignments, and communication tools into one intuitive platform, helping you stay organized and on top of your educational goals. With real-time updates and personalized insights, EduHub makes managing your studies simpler and more efficient.
-- **Technologies Used:** Next, Typescript, Node.js, Express.js, Postgres, and Railway.
+### OrderMate
+- **Description:** OrderMate simplifies the ordering process with its intuitive self-service kiosk software. Customers can easily browse menus, customize orders, and make payments, all while seamlessly integrating with your existing systems. Designed to enhance efficiency and reduce errors, OrderMate delivers a smooth, modern ordering experience that boosts customer satisfaction.
+- **Technologies Used:** React, Typescript, Node.js, Express.js, Postgres, and Railway.
 - **Link:** Still Working on it.
 
 ### CodeVenue
@@ -42,5 +42,5 @@ I'm a Web Developer with a passion for Front-End Development. I build visually s
 ### Rulay
 - **Description:** Discover the vibrant beauty of the Dominican Republic with Rulay! Our website offers a curated guide to the country's most breathtaking tourist destinations, from pristine beaches and lush rainforests to historic sites and lively cities. Whether you're planning a relaxing getaway or an adventurous exploration
 - **Technologies Used:** React, Typescript, Node.js, Express.js, MongoDB.
-- **Link:** Still working on it.
+- **Link:** [https://rulay.pages.dev/](https://rulay.pages.dev/)
 ### And more.
