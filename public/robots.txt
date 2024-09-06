@@ -1,4 +1,4 @@
-# robots.txt for CodeVenue
+# robots.txt for Yefry Portfolio
 
 # Allow all web crawlers access to the entire site
 User-agent: *
@@ -14,4 +14,4 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap location
-Sitemap: https://codevenue.pages.dev/
+Sitemap: https://yefry.dev/
