@@ -1,25 +1,26 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
 import propTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const ProjectContentHeader = ({ projectTitle, projectType, img }) => {
   return (
     <div className="mb-16">
-      <motion.a
+      <motion.div
         variants={fadeUp}
         initial="initial"
         viewport={{ once: true }}
         whileInView={"animate"}
-        className="flex gap-2 mb-4 group  xl:max-w-[1300px] xl:mx-auto"
-        href="/works"
       >
-        <span>
-          <i className="fa-solid fa-chevron-left"></i>
-        </span>
-        <span className="group-hover:translate-x-2 font-bold transition duration-300 tracking-tighter">
-          ALL PROJECTS
-        </span>
-      </motion.a>
+        <Link to={"/works"} className="group flex gap-2 mb-4  xl:max-w-[1300px] xl:mx-auto">
+          <span>
+            <i className="fa-solid fa-chevron-left"></i>
+          </span>
+          <span className="group-hover:translate-x-2 font-bold transition duration-300 tracking-tighter">
+            ALL PROJECTS
+          </span>
+        </Link>
+      </motion.div>
       <motion.h1
         variants={fadeUp}
         initial="initial"
