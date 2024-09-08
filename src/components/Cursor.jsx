@@ -38,7 +38,7 @@ export default function Cursor() {
     <div
       ref={circle}
       
-      className={`transition-all ease-out duration-500 top-0 left-0 fixed rounded-full z-50 pointer-events-none border hidden lg:block bg-shade1/70`}
+      className={`transition-all ease-out duration-75 top-0 left-0 fixed rounded-full z-50 pointer-events-none border hidden lg:block bg-shade1/70`}
     >
       <div
         className={`transition-all duration-200 ${

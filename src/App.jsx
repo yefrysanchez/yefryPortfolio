@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-shade3 min-h-screen font-inter ">
+    <div className="bg-shade3 min-h-screen font-inter cursor-none">
       <CursorContextData>
         <ScrollRestoration />
         <Cursor />
