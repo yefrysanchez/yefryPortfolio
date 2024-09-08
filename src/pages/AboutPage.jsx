@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
-import ScrollRestoration from "../components/ScrollRestoration";
 import AboutPageCerts from "../components/AboutPageCerts";
 import AboutPageDesc from "../components/AboutPageDesc";
 
 const AboutPage = () => {
   return (
-    <>
-      <ScrollRestoration />
-      <main className="pt-[124px] px-[40px] pb-4 md:px-8 mx-auto max-w-[2550px]">
+ 
+ 
+      <main className="pt-[124px] px-[40px] pb-4 md:px-8 mx-auto max-w-[1650px]">
         <AboutPageDesc />
         <section className="my-40 ">
           <motion.h2
@@ -92,7 +91,7 @@ const AboutPage = () => {
           </motion.div>
         </section>
       </main>
-    </>
+    
   );
 };
 
