@@ -26,8 +26,8 @@ I'm a Web Developer with a passion for Front-End Development. I build visually s
 
 ## Projects
 
-### OrderMate
-- **Description:** OrderMate simplifies the ordering process with its intuitive self-service kiosk software. Customers can easily browse menus, customize orders, and make payments, all while seamlessly integrating with your existing systems. Designed to enhance efficiency and reduce errors, OrderMate delivers a smooth, modern ordering experience that boosts customer satisfaction.
+### EZ-POS
+- **Description:**  EZ-Pos is a user-friendly point-of-sale software designed to streamline retail operations. With its intuitive interface, EZ-Pos allows businesses to manage sales, inventory, and customer data effortlessly. Features include real-time reporting, customizable receipts, and seamless integration with various payment processors. Whether you're running a café, boutique, or restaurant, EZ-Pos simplifies transactions and enhances customer service, helping you focus on what matters most—growing your business.
 - **Technologies Used:** React, Typescript, Node.js, Express.js, Postgres, and Railway.
 - **Link:** Still Working on it.
 
@@ -37,7 +37,7 @@ I'm a Web Developer with a passion for Front-End Development. I build visually s
   platform offers a curated selection of Lofi beats to enhance your coding
   sessions and foster productivity.
 - **Technologies Used:** React, Typescript, Node.js, Express.js, MongoDB, and Google Cloud.
-- **Link:** Still working on it.
+- **Link:** [https://codevenue.pages.dev/](https://codevenue.pages.dev/)
 
 ### Rulay
 - **Description:** Discover the vibrant beauty of the Dominican Republic with Rulay! Our website offers a curated guide to the country's most breathtaking tourist destinations, from pristine beaches and lush rainforests to historic sites and lively cities. Whether you're planning a relaxing getaway or an adventurous exploration
