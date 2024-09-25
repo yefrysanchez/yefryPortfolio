@@ -2,17 +2,16 @@ import ProjectVideo from "../components/ProjectVideo";
 import ProjectContent from "../components/ProjectContent";
 import ProjectContentHeader from "../components/ProjectContentHeader";
 
-const ProjectContentPage = () => {
-  
-  const url =
-    "https://images.unsplash.com/photo-1715276611597-048987ab7d97?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
+
+const ProjectContentPage = () => {
+ 
   return (
     <div className="pt-32 text-shade1 px-4">
       <ProjectContentHeader
         projectTitle="project title"
         projectType="Project Type"
-        img={url}
+        img={"/codevenue.webp"}
       />
 
       <ProjectContent

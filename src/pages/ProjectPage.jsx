@@ -18,11 +18,11 @@ const ProjectPage = () => {
         Works
       </h2>
       <div className="grid gap-12">
-        
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+         <ProjectCard img="/more.webp" />
+         <ProjectCard img="/more.webp" />
+         <ProjectCard img="/more.webp" />
+         <ProjectCard img="/more.webp" />
+         <ProjectCard img="/more.webp" />
       </div>
     </motion.main>
   )

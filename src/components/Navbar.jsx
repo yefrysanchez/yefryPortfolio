@@ -31,7 +31,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="z-40 fixed w-full top-0 text-shade1 bg-shade3/30 h-24 flex justify-between items-center ">
+    <nav className="z-40 backdrop-blur-sm fixed w-full top-0 text-shade1 bg-shade3/30 h-24 flex justify-between items-center ">
       <div className="font-bold tracking-[-5px] text-6xl w-fit ml-4">
         <Link to={"/"}>
           <h3 className="flex flex-col select-none text-[35px] leading-6  text-center lg:pl-8">

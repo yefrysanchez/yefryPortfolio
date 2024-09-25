@@ -41,7 +41,7 @@ export default function Cursor() {
       className={`transition-all ease-out duration-75 top-0 left-0 fixed rounded-full z-50 pointer-events-none border hidden lg:block bg-shade1/70`}
     >
       <div
-        className={`transition-all duration-200 ${
+        className={`transition-all ${
           isActive
             ? "flex justify-center items-center text-7xl h-[200px] w-[200px]"
             : "mix-blend-difference w-[20px] h-[20px]"
