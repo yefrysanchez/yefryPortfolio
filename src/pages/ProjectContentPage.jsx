@@ -3,11 +3,14 @@ import ProjectContent from "../components/ProjectContent";
 import ProjectContentHeader from "../components/ProjectContentHeader";
 import { useParams } from "react-router-dom";
 import projects from "../data/projectData";
+import NotFoundPage from "./NotFoundPage";
 
 const ProjectContentPage = () => {
   const { work } = useParams();
-  const workData = projects.find((w) => w.title.replace(" ", "") === work);
-
+  const workData = projects.find((w) => w.title === work);
+  if (!workData) {
+    return <NotFoundPage />;
+  }
   return (
     <div className="pt-32 text-shade1 px-4">
       <ProjectContentHeader

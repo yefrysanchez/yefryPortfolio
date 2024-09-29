@@ -6,6 +6,7 @@ import BlogPage from "../pages/BlogPage";
 import ProjectContentPage from "../pages/ProjectContentPage";
 import BlogContentPage from "../pages/BlogContentPage";
 import ContactPage from "../pages/ContactPage";
+import NotFoundPage from "../pages/NotFoundPage";
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
       <Route path="/blogs" element={<BlogPage />} />
       <Route path="/blogs/:blog" element={<BlogContentPage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 };

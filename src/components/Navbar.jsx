@@ -84,7 +84,7 @@ const Navbar = () => {
               animate="enter"
               exit="exit"
               initial="initial"
-              className="bg-shade1 text-shade3 z-30 group absolute top-0 right-0 h-screen text-5xl sm:text-6xl md:text-7xl 2xl:text-9xl font-medium flex flex-col w-full lg:w-[40%] 2xl:w-[50%] gap-2 md:gap-4 px-8 pt-20"
+              className="bg-shade1 text-shade3 z-[999] group absolute top-0 right-0 h-screen text-5xl sm:text-6xl md:text-7xl 2xl:text-9xl font-medium flex flex-col w-full lg:w-[40%] 2xl:w-[50%] gap-2 md:gap-4 px-8 pt-20"
             >
               <div
                 onClick={() => {
@@ -125,7 +125,7 @@ const Navbar = () => {
               animate="enter"
               exit="exit"
               initial="initial"
-              className="fixed top-0 z-10 left-0 right-0 bottom-0 bg-shade3/80 "
+              className="absolute inset-0 h-screen bg-shade3/60 z-[998]"
             ></motion.div>
           </>
         )}
