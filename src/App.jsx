@@ -9,7 +9,6 @@ import Cursor from "./components/Cursor";
 import CursorContextData from "./context/CursorContext";
 
 function App() {
-  // https://blurr.framer.website/
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -22,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-shade3 min-h-screen font-inter cursor-none">
+    <div className="bg-shade3 min-h-screen font-inter ">
       <CursorContextData>
         <ScrollRestoration />
         <Cursor />

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import propTypes from "prop-types"
 
 
-const ProjectCard = ({img, title = "", desc = ""}) => {
+const ProjectCard = ({img, title, desc}) => {
  
   const { setIsActive } = useContext(MyCursorContext);
 
@@ -17,8 +17,10 @@ const ProjectCard = ({img, title = "", desc = ""}) => {
     setIsActive(false);
   };
 
+
+
   return (
-    <Link to={"/works/work"}>
+    <Link to={`/works/${title}`}>
       <motion.div
         onClick={() => setIsActive(false)}
         onMouseEnter={onMouseEnter}

@@ -30,10 +30,7 @@ const AboutSection = () => {
       >
         <Link
           to={"/about"}
-          variants={fadeUp}
-          initial="initial"
-          viewport={{ once: true }}
-          whileInView={"animate"}
+         
           className="w-40 h-40 bg-shade2/15 hover:bg-shade1 hover:text-shade3 transition duration-300 rounded-full flex justify-center items-center"
         >
           <span className="text-xl font-medium">About Me</span>

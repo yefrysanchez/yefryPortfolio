@@ -20,7 +20,7 @@ const ProjectSection = () => {
           <ProjectCard key={p.title} title={p.title} desc={p.desc} img={p.img} />
         ))}
 
-        <ProjectCard img="/more.webp" />
+        <ProjectCard desc="" title="" img="/more.webp" />
       </div>
     </motion.section>
   );

@@ -38,20 +38,18 @@ export default function Cursor() {
     <div
       ref={circle}
       
-      className={`transition-all ease-out duration-75 top-0 left-0 fixed rounded-full z-50 pointer-events-none border hidden lg:block bg-shade1/70`}
+      className={`transition-all ease-out duration-500 top-0 left-0 fixed rounded-full z-50 pointer-events-none border hidden lg:block bg-shade1`}
     >
       <div
         className={`transition-all ${
           isActive
             ? "flex justify-center items-center text-7xl h-[200px] w-[200px]"
-            : "mix-blend-difference w-[20px] h-[20px]"
+            : " w-[20px] h-[20px]"
         }`}
       >
-        {isActive ? (
+        {isActive && (
           <i className="fa-solid fa-arrow-right -rotate-45 "></i>
-        ) : (
-          ""
-        )}
+        ) }
       </div>
     </div>
   );

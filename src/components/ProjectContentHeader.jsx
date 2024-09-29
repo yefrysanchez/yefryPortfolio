@@ -3,7 +3,7 @@ import { fadeUp } from "../animations/animation";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const ProjectContentHeader = ({ projectTitle, projectType, img }) => {
+const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
   return (
     <div className="mb-16">
       <motion.div
@@ -12,7 +12,10 @@ const ProjectContentHeader = ({ projectTitle, projectType, img }) => {
         viewport={{ once: true }}
         whileInView={"animate"}
       >
-        <Link to={"/works"} className="group flex gap-2 mb-4  xl:max-w-[1300px] xl:mx-auto">
+        <Link
+          to={"/works"}
+          className="group flex gap-2 mb-4  xl:max-w-[1300px] xl:mx-auto"
+        >
           <span>
             <i className="fa-solid fa-chevron-left"></i>
           </span>
@@ -36,7 +39,7 @@ const ProjectContentHeader = ({ projectTitle, projectType, img }) => {
           initial="initial"
           viewport={{ once: true }}
           whileInView={"animate"}
-          className="text-2xl inline-block text-shade1/60 uppercase tracking-tighter font-medium "
+          className="text-2xl inline-block text-shade1/60 capitalize tracking-tighter font-medium "
         >
           {projectType}
         </motion.span>
@@ -45,10 +48,11 @@ const ProjectContentHeader = ({ projectTitle, projectType, img }) => {
           initial="initial"
           viewport={{ once: true }}
           whileInView={"animate"}
-          href=""
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <span className="text-shade3 inline-block bg-shade1 rounded-2xl py-4 px-8 hover:opacity-90 transition duration-300 group">
-            {" "}
             Live Preview
             <span className="ml-2">
               <i className="fa-solid fa-arrow-up-right-from-square group-hover:translate-x-1 transition duration-300"></i>
@@ -79,4 +83,5 @@ ProjectContentHeader.propTypes = {
   projectTitle: propTypes.string.isRequired,
   projectType: propTypes.string.isRequired,
   img: propTypes.string.isRequired,
+  url: propTypes.string.isRequired,
 };
