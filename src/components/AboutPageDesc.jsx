@@ -10,7 +10,7 @@ const AboutPageDesc = () => {
           initial="initial"
           viewport={{ once: true }}
           whileInView={"animate"}
-          className="text-[70px] lg:text-[100px] xl:text-[240px]  uppercase tracking-tighter flex flex-col leading-[0.9] font-semibold mb-12"
+          className="text-[70px] lg:text-[100px] xl:text-[240px] drop-shadow-lg  uppercase tracking-tighter flex flex-col leading-[0.9] font-semibold mb-12"
         >
           <span className="flex items-center xl:w-[997px]">
             Yefry{" "}

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
 import { fadeUp } from "../animations/animation";
 import OldProjectCard from "../components/AllProjectCard";
+import projects from "../data/projectData";
 
 const ProjectPage = () => {
   // https://htmlmafia.digital/en
@@ -18,14 +19,20 @@ const ProjectPage = () => {
         Works
       </h2>
       <div className="grid xl:grid-cols-2 gap-12">
-        <ProjectCard img="/ezpos.png" />
-        <ProjectCard img="/rulay.webp" />
-        <ProjectCard img="/codevenue.webp" />
-        <div className="grid grid-cols-2 gap-2 md:gap-4 h-[500px] md:h-[550px] 2xl:h-[800px]">
-          <OldProjectCard img="/more.webp"/>
-          <OldProjectCard img="/more.webp"/>
-          <OldProjectCard img="/more.webp"/>
-          <OldProjectCard img="/more.webp"/>
+        {projects.map((p) => (
+          <ProjectCard
+            key={p.title}
+            title={p.title}
+            desc={p.desc}
+            img={p.img}
+          />
+        ))}
+
+        <div className="grid grid-cols-2 grid-rows-2 gap-2 md:gap-4 h-[500px] md:h-[550px] 2xl:h-[800px]">
+          <OldProjectCard img="/more.webp" />
+          <OldProjectCard img="/more.webp" />
+          <OldProjectCard img="/more.webp" />
+          <OldProjectCard img="/more.webp" />
         </div>
       </div>
     </motion.main>

@@ -13,7 +13,7 @@ const AboutSection = () => {
           whileInView={"animate"}
           className="text-2xl md:text-3xl lg:text-5xl xl:text-7xl text-shade2 font-medium tracking-tight lg:max-w-[1100px] xl:max-w-[1400px] mx-auto"
         >
-          I&apos;m a <span className="text-shade1">Web Developer</span> with a
+          I&apos;m a <span className="text-shade1">Software Developer</span> with a
           passion for <span className="text-shade1">Front-End Development</span>
           . I build visually stunning websites that leave a deep and lasting
           impression on users.{" "}

@@ -10,7 +10,8 @@ export default {
       shade1: "#FFFFFF",
       shade2: "#646467",
       shade3: "#0D0D0D",
-      transparent: "transparent"
+      transparent: "transparent",
+      accent: "#AC89E7"
     },
   },
   plugins: [],
