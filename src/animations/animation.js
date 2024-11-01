@@ -105,12 +105,14 @@ export const scaleY = {
         opacity:0
 
     },
-    animate: {
+    animate: (i = 3) => (
+        {
 
-        opacity:1,
-        scaleY: 1,
-        transition: {duration: 4.3, ease: [0.25, 1, 0.5, 1], delay: 3}
-    },
+            opacity:1,
+            scaleY: 1,
+            transition: {duration: 4.3, ease: [0.25, 1, 0.5, 1], delay: i}
+        }
+    ),
   
 }
 
