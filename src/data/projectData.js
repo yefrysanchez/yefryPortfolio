@@ -7,7 +7,7 @@ const projects = [
     desc: "User-friendly point-of-sale software",
     info: `EZ-Pos is a user-friendly point-of-sale software designed to streamline retail operations. With its intuitive interface, EZ-Pos allows businesses to manage sales, inventory, and customer data effortlessly. Features include real-time reporting, customizable receipts, and seamless integration with various payment processors. Whether you're running a café, boutique, or restaurant, EZ-Pos simplifies transactions and enhances customer service, helping you focus on what matters most—growing your business.`,
 
-    role: "My key contributions included designing the software architecture, developing the front-end interface and backend development",
+    role: "My key contributions included designing the software architecture, developing the front-end interface and backend development.",
     lang: "Typescript, HTML, CSS",
     framework: "React, Nodejs, TailwindCSS",
     database: "Postgres",
@@ -27,13 +27,13 @@ const projects = [
     img: "/rulay.webp",
     type: "Traveling website",
     desc: "Discover amazing places.",
-    info: `Discover the vibrant beauty of the Dominican Republic with Rulay! Our website offers a curated guide to the country's most breathtaking tourist destinations, from pristine beaches and lush rainforests to historic sites and lively cities. Whether you're planning a relaxing getaway or an adventurous exploration`,
+    info: `Discover the vibrant beauty of the Dominican Republic with Rulay! Our website offers a curated guide to the country's most breathtaking tourist destinations, from pristine beaches and lush rainforests to historic sites and lively cities. Whether you're planning a relaxing getaway or an adventurous exploration.`,
 
     role: "As the project lead and web developer, I was responsible for the design, development, and content management of the website. My contributions included creating an engaging user interface, developing the backend for seamless content updates, and ensuring a responsive design for all devices.",
     lang: "Javascript, HTML, CSS",
     framework: "React, Nodejs, TailwindCSS",
     database: "MongoDB",
-    payment: null,
+    payment: "N/A",
     design: "Figma",
     challenge:
       "Many travelers struggle to find reliable and comprehensive information about the Dominican Republic, leading to missed opportunities for exploration. To tackle this challenge, Rulay was designed with features that enhance the user experience.",

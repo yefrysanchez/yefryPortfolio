@@ -20,7 +20,7 @@ const ProjectContentPage = () => {
         img={workData.img}
       />
 
-      <ProjectContent title={workData.title} paragraph={workData.info} />
+      <ProjectContent data={workData}  />
       <div className="flex flex-col lg:flex-row gap-8 xl:max-w-[1600px] xl:mx-auto mb-12">
         <ProjectVideo src="https://media.istockphoto.com/id/1444290062/video/dramatic-aerial-view-of-the-statue-of-liberty-and-nyc-skyline-at-dawn.mp4?s=mp4-640x640-is&k=20&c=SEwKZXkGSod44SGFZ0r8wL3ZWqM7ZTxYzaYX0njhkQo=" />
         <ProjectVideo src="https://videos.pexels.com/video-files/3999358/3999358-uhd_3840_2160_24fps.mp4" />

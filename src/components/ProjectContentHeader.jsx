@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
   return (
-    <div className="mb-16">
+    <div className="mb-16 ">
       <motion.div
         variants={fadeUp}
         initial="initial"
@@ -14,7 +14,7 @@ const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
       >
         <Link
           to={"/works"}
-          className="group flex gap-2 mb-4  xl:max-w-[1300px] xl:mx-auto"
+          className="group flex gap-2 mb-4  xl:max-w-7xl xl:mx-auto"
         >
           <span>
             <i className="fa-solid fa-chevron-left"></i>
@@ -33,7 +33,7 @@ const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
       >
         {projectTitle}
       </motion.h1>
-      <div className="flex items-center lg:justify-between gap-4 mb-8 xl:max-w-[1300px] xl:mx-auto">
+      <div className="flex items-center lg:justify-between gap-4 mb-8 xl:max-w-7xl xl:mx-auto">
         <motion.span
           variants={fadeUp}
           initial="initial"
