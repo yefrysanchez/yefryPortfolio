@@ -45,7 +45,7 @@ const FooterSection = () => {
           })}
         </text>
       </svg>
-      <div className="overflow-hidden bg-shade1">
+      <div className="overflow-hidden bg-shade3">
       <motion.div style={{y}} className="bg-shade1 h-[250px] flex items-center justify-center">
         <div className="text-shade3 text-5xl flex gap-5 lg:gap-10">
           <Link className="group" to={"/"}><i className="fa-solid fa-house group-hover:-translate-y-3 group-hover:transition duration-300"></i></Link>

@@ -13,7 +13,7 @@ const SoftDevSection = () => {
       >
         <span>Software</span>{" "}
         <div className="flex items-center">
-    
+         
           <span className="ml-[51%] lg:ml-auto">Dev</span>
         </div>
       </motion.h2>
@@ -22,7 +22,7 @@ const SoftDevSection = () => {
         initial="initial"
         viewport={{ once: true }}
         whileInView={"animate"}
-        className="h-4 w-32 my-8 bg-shade2 lg:hidden"
+        className="h-4 w-[25vw] mb-8 -mt-8 bg-shade2 lg:hidden"
       ></motion.div>
       <h2 className="text-shade2 flex flex-col">
         <motion.span
@@ -52,10 +52,10 @@ const SoftDevSection = () => {
             className="overflow-hidden rounded-full"
           >
             <img
-              className="h-[16vw] w-[16vw] lg:w-[150px] lg:h-[150px] xl:h-[170px] xl:w-[490px]  object-cover scale-150 md:scale-125 xl:scale-100 xl:object-[center_-80px]"
-              src="/profile.jpeg"
-              alt="profile image"
-            />
+  className="h-[12vw] w-[16vw] lg:w-[150px] lg:h-[150px] object-[center_-2px] xl:h-[170px] xl:w-[580px] xl:hover: xl:transition-all duration-300 object-cover scale-150 md:scale-125 xl:scale-100 xl:object-[center_-80px] xl:hover:object-[center_-120px]"
+  src="/profile.jpeg"
+  alt="profile image"
+/>
           </motion.span>
         </span>
       </h2>
