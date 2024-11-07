@@ -5,93 +5,61 @@ import AboutPageDesc from "../components/AboutPageDesc";
 
 const AboutPage = () => {
   return (
- 
- 
-      <main className="pt-[124px] px-[40px] pb-4 md:px-8 mx-auto max-w-[1650px]">
-        <AboutPageDesc />
-        <section className="my-40 ">
-          <motion.h2
-            variants={fadeUp}
-            initial="initial"
-            viewport={{ once: true }}
-            whileInView={"animate"}
-            className="text-[50px] text-shade1 lg:text-[100px]  uppercase tracking-tighter leading-[0.9] font-semibold my-20 lg:text-center"
-          >
-            skills
-          </motion.h2>
-          <motion.div
-            variants={fadeUp}
-            initial="initial"
-            viewport={{ once: true }}
-            whileInView={"animate"}
-            className="text-shade1 text-6xl grid grid-cols-3 md:grid-cols-4 md:gap-y-20 gap-4 lg:grid-cols-9"
-          >
-            <span className="flex flex-col items-center">
-              <i className="fa-brands fa-html5"></i>
-              <span className="text-xl">HTML</span>
-            </span>
-            <span className="flex flex-col items-center">
-              <i className="fa-brands fa-css3-alt"></i>
-              <span className="text-xl">CSS</span>
-            </span>
-            <span className="flex flex-col items-center">
-              <i className="fa-brands fa-js"></i>
-              <span className="text-xl">JavaScript</span>
-            </span>
-            <span className="flex flex-col items-center">
-              <i className="fa-brands fa-react"></i>
-              <span className="text-xl">React</span>
-            </span>
-            <span className="flex flex-col items-center">
-              <i className="fa-brands fa-aws"></i>
-              <span className="text-xl">AWS</span>
-            </span>
-            <span className="flex flex-col items-center">
-              <i className="fa-brands fa-google"></i>
-              <span className="md:text-xl text-[3vw]">Google Cloud</span>
-            </span>
-            <span className="flex flex-col items-center">
-              <i className="fa-solid fa-database"></i>
-              <span className="text-xl">Postgres</span>
-            </span>
-            <span className="flex flex-col items-center">
-              <i className="fa-brands fa-git"></i>
-              <span className="text-xl">Git</span>
-            </span>
-            <span className="flex flex-col items-center">
-              <i className="fa-brands fa-docker"></i>
-              <span className="text-xl">Docker</span>
-            </span>
-          </motion.div>
-        </section>
-        <section className="my-40 ">
-          <motion.h2
-            variants={fadeUp}
-            initial="initial"
-            viewport={{ once: true }}
-            whileInView={"animate"}
-            className="text-[10.5vw] text-shade1 lg:text-[100px]  uppercase tracking-tighter leading-[0.9] font-semibold mb-40 lg:text-center"
-          >
-            Certifications
-          </motion.h2>
-          <motion.div
-            variants={fadeUp}
-            initial="initial"
-            viewport={{ once: true }}
-            whileInView={"animate"}
-            className="font-alata text-2xl text-shade1 border-t"
-          >
-            {certs.map((cert) => (
-              <AboutPageCerts
-                key={cert.title}
-                title={cert.title}
-                url={cert.url}
-              />
-            ))}
-          </motion.div>
-        </section>
-      </main>
-    
+    <main className="pt-[124px] px-[40px] pb-4 md:px-8 mx-auto max-w-[1650px]">
+      <AboutPageDesc />
+      <section className="my-40 ">
+        <motion.h2
+          variants={fadeUp}
+          initial="initial"
+          viewport={{ once: true }}
+          whileInView={"animate"}
+          className="text-[50px] text-shade1 lg:text-[100px]  uppercase tracking-tighter leading-[0.9] font-semibold my-20 lg:text-center"
+        >
+          skills
+        </motion.h2>
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {skills.map((e) => (
+            <motion.div
+              key={e.skill}
+              variants={fadeUp}
+              initial="initial"
+              viewport={{ once: true }}
+              whileInView={"animate"}
+              className="text-shade1 mx-auto w-full text-xl  md:max-w-lg min-h-40 bg-shade2/10 p-4 rounded-xl"
+            >
+              <h3 className="font-bold mb-2">{e.skill}</h3>
+              <p className="text-shade2">{e.tech}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+      <section className="my-40 ">
+        <motion.h2
+          variants={fadeUp}
+          initial="initial"
+          viewport={{ once: true }}
+          whileInView={"animate"}
+          className="text-[10.5vw] text-shade1 lg:text-[100px]  uppercase tracking-tighter leading-[0.9] font-semibold mb-40 lg:text-center"
+        >
+          Certifications
+        </motion.h2>
+        <motion.div
+          variants={fadeUp}
+          initial="initial"
+          viewport={{ once: true }}
+          whileInView={"animate"}
+          className="font-alata text-2xl text-shade1 border-t"
+        >
+          {certs.map((cert) => (
+            <AboutPageCerts
+              key={cert.title}
+              title={cert.title}
+              url={cert.url}
+            />
+          ))}
+        </motion.div>
+      </section>
+    </main>
   );
 };
 
@@ -109,5 +77,32 @@ const certs = [
   {
     title: "Google: Technical Support Fundamentals",
     url: "https://www.coursera.org/account/accomplishments/verify/VWMAQRSDT53A",
+  },
+];
+
+const skills = [
+  {
+    skill: "Languages & Frameworks:",
+    tech: "JavaScript, TypeScript, React, Node.js, Express.js, HTML, CSS.",
+  },
+  {
+    skill: "Styling:",
+    tech: "Tailwind CSS, Styled Components, CSS Modules , Framer Motion.",
+  },
+  {
+    skill: "State Management:",
+    tech: "Redux Toolkit, Zustand.",
+  },
+  {
+    skill: "Databases:",
+    tech: "MongoDB, SQL, Prisma, Mongoose.",
+  },
+  {
+    skill: "Cloud:",
+    tech: "AWS (Certified Developer in Process, Certified Cloud Practitioner), Google Cloud (Certified Engineer).",
+  },
+  {
+    skill: "Version Control:",
+    tech: "Git, GitHub.",
   },
 ];
