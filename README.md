@@ -29,7 +29,7 @@ I'm a Web Developer with a passion for Front-End Development. I build visually s
 ### EZ-POS
 - **Description:**  EZ-Pos is a user-friendly point-of-sale software designed to streamline retail operations. With its intuitive interface, EZ-Pos allows businesses to manage sales, inventory, and customer data effortlessly. Features include real-time reporting, customizable receipts, and seamless integration with various payment processors. Whether you're running a café, boutique, or restaurant, EZ-Pos simplifies transactions and enhances customer service, helping you focus on what matters most—growing your business.
 - **Technologies Used:** React, Typescript, Node.js, Express.js, Postgres, and Railway.
-- **Link:** Still Working on it.
+- **Link:** [https://ezpos.pages.dev/](https://ezpos.pages.dev/)
 
 ### CodeVenue
 - **Description:** CodeVenue is a music web app where coding meets creativity through
