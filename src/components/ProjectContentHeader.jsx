@@ -53,7 +53,7 @@ const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
           rel="noopener noreferrer"
         >
           <span className="text-shade3 inline-block bg-shade1 rounded-2xl py-4 px-8 hover:opacity-90 transition duration-300 group">
-            Live Preview
+            Live Demo
             <span className="ml-2">
               <i className="fa-solid fa-arrow-up-right-from-square group-hover:translate-x-1 transition duration-300"></i>
             </span>
