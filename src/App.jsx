@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-shade3 min-h-svh lg:min-h-screen font-inter ">
+    <div className="bg-shade3 min-h-dvh lg:min-h-screen font-inter">
       <CursorContextData>
         <ScrollRestoration />
         <Cursor />
