@@ -18,8 +18,8 @@ const projects = [
     solution:
       "EZ-Pos automates inventory management, providing real-time updates and alerts when stock levels are low. This reduces manual tracking and helps businesses make informed purchasing decisions. EZ-Pos will offers real-time reporting and analytics features, enabling business owners to gain insights into sales performance and customer behavior.",
 
-    vid1: "https://github.com/yefrysanchez/portfolio-assets/raw/refs/heads/main/EZ-POS.webm",
-    vid2: "https://github.com/yefrysanchez/portfolio-assets/raw/refs/heads/main/EZ-POS-mobile.webm",
+    vid1: "/EZ-POS.webm",
+    vid2: "/EZ-POS-mobile.webm",
   },
   {
     title: "Rulay",
@@ -40,8 +40,8 @@ const projects = [
     solution:
       "Rulay organizes information into easily navigable categories, allowing users to quickly find what they’re looking for, whether it’s beaches, adventure activities, or cultural experiences. The Rulay website is fully responsive, ensuring a seamless experience on smartphones and tablets, perfect for travelers who need information while exploring.",
 
-    vid1: "https://github.com/yefrysanchez/portfolio-assets/raw/refs/heads/main/Rulay.webm",
-    vid2: "https://github.com/yefrysanchez/portfolio-assets/raw/refs/heads/main/Rulay-mobile.webm",
+    vid1: "/Rulay.webm",
+    vid2: "/Rulay-mobile.webm",
   },
   {
     title: "Codevenue",
@@ -63,8 +63,8 @@ const projects = [
     solution:
       "CodeVenue offers a carefully curated selection of lofi tracks, ensuring that every playlist promotes focus and creativity without distraction. CodeVenue’s minimalist design allows users to focus on their work without distractions, making it easy to play, pause, or skip tracks as needed.",
 
-    vid1: "https://github.com/yefrysanchez/portfolio-assets/raw/refs/heads/main/Codevenue.webm",
-    vid2: "https://github.com/yefrysanchez/portfolio-assets/raw/refs/heads/main/Codevenue-mobile.webm",
+    vid1: "/Codevenue.webm",
+    vid2: "/Codevenue-mobile.webm",
   },
 ];
 
