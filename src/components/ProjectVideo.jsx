@@ -16,7 +16,7 @@ const ProjectVideo = ({ src }) => {
         playsInline
         muted
         loop
-        className="h-full w-full object-cover"
+        className="h-full w-full object-contain"
       >
         <source src={src} />
       </video>
