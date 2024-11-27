@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
+import resume from "../assets/yefrySanchezResume.pdf";
 
 const AboutPageDesc = () => {
+  const OpenPDFButton = () => {
+    window.open(resume, "_blank");
+  };
+
   return (
     <section className="xl:flex relative xl:min-h-screen ">
       <div className="text-shade1 flex-1 z-10 xl:w-1/2 2xl:w-1/3 mb-12">
@@ -36,6 +41,12 @@ const AboutPageDesc = () => {
             baseball, video games, producing music, and all about computers from
             hardware to software. I am passionate about technology in general.
           </span>
+          <button
+            onClick={OpenPDFButton}
+            className="text-shade1  w-full text-xl  h-full bg-shade2/10 hover:bg-shade1/10 transition-colors p-4 rounded-xl"
+          >
+            Open Resume
+          </button>
         </motion.p>
       </div>
       <motion.div

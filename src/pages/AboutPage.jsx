@@ -7,7 +7,8 @@ const AboutPage = () => {
   return (
     <main className="pt-[124px] px-[40px] pb-4 md:px-8 mx-auto max-w-[1650px]">
       <AboutPageDesc />
-      <section className="my-40 ">
+
+      <section>
         <motion.h2
           variants={fadeUp}
           initial="initial"
