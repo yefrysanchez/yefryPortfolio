@@ -9,7 +9,7 @@ const ProjectVideo = ({ src }) => {
       initial="initial"
       viewport={{ once: true }}
       whileInView={"animate"}
-      className="rounded-3xl overflow-hidden h-[300px] md:h-[500px] select-none"
+      className="h-[300px] md:h-[500px] select-none"
     >
       <video
         autoPlay
@@ -17,8 +17,9 @@ const ProjectVideo = ({ src }) => {
         muted
         loop
         className="h-full w-full object-contain"
+        loading="lazy"
       >
-        <source src={src} />
+        <source src={src} type="video/webm" />
       </video>
     </motion.div>
   );
