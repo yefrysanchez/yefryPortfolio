@@ -19,7 +19,7 @@ const ProjectVideo = ({ src }) => {
         className="h-full w-full object-contain"
         loading="lazy"
       >
-        <source src={src} type="video/webm" />
+        <source src={src} />
       </video>
     </motion.div>
   );
