@@ -68,6 +68,10 @@ export default AboutPage;
 
 const certs = [
   {
+    title: "Meta Front-End Developer Specialization",
+    url: "https://www.coursera.org/account/accomplishments/specialization/ROUJXCAW6O6Q",
+  },
+  {
     title: "Google Cloud: Associate Cloud Engineer",
     url: "https://www.credly.com/badges/7ac77b31-e544-4863-9845-c8f4c93f8b40/linked_in_profile",
   },
