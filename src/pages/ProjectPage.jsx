@@ -29,10 +29,9 @@ const ProjectPage = () => {
         ))}
 
         <div className="grid grid-cols-2 grid-rows-2 gap-2 md:gap-4 h-[500px] md:h-[550px] 2xl:h-[800px]">
-          <OldProjectCard img="/more.webp" />
-          <OldProjectCard img="/more.webp" />
-          <OldProjectCard img="/more.webp" />
-          <OldProjectCard img="/more.webp" />
+          {others.map((e) => (
+            <OldProjectCard key={e.title} title={e.title} url={e.url} />
+          ))}
         </div>
       </div>
     </motion.main>
@@ -40,3 +39,22 @@ const ProjectPage = () => {
 };
 
 export default ProjectPage;
+
+const others = [
+  {
+    title: "cryptofy",
+    url: "https://cryptofy.pages.dev/",
+  },
+  {
+    title: "ShoesJS",
+    url: "https://website-dv6.pages.dev/",
+  },
+  {
+    title: "YSDev",
+    url: "https://ysdev.pages.dev/",
+  },
+  {
+    title: "Portfolio V1",
+    url: "https://ys-portfolio.pages.dev/",
+  },
+];
