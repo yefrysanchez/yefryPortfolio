@@ -116,7 +116,10 @@ const Navbar = () => {
               </Link>
               </motion.li>
              ))}
-
+              <div>
+                <a target="_blank" href="https://github.com/yefrysanchez" className="hover:text-[#905ee7] duration-300 absolute right-8 bottom-4"><i className="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/yefrysanchez/" className="hover:text-[#905ee7] duration-300 absolute bottom-4"><i className="fa-brands fa-linkedin"></i></a>
+              </div>
             </motion.ul>
 
             <motion.div
