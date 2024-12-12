@@ -3,9 +3,13 @@ import ProjectCard from "../components/ProjectCard";
 import { fadeUp } from "../animations/animation";
 import OldProjectCard from "../components/AllProjectCard";
 import projects from "../data/projectData";
+import { useEffect } from "react";
 
 const ProjectPage = () => {
-  // https://htmlmafia.digital/en
+
+  useEffect(() => {
+    document.title = "Projects | Portfolio"
+  }, [])
 
   return (
     <motion.main

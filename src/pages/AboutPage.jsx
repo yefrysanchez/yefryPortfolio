@@ -2,8 +2,14 @@ import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
 import AboutPageCerts from "../components/AboutPageCerts";
 import AboutPageDesc from "../components/AboutPageDesc";
+import { useEffect } from "react";
 
 const AboutPage = () => {
+
+  useEffect(() => {
+    document.title = "About Me | Portfolio"
+  }, [])
+
   return (
     <main className="pt-[124px] px-[40px] pb-4 md:px-8 mx-auto max-w-[1650px]">
       <AboutPageDesc />

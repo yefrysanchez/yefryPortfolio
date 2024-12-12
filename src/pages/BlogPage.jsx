@@ -2,8 +2,14 @@ import { motion } from "framer-motion";
 import BlogCard from "../components/BlogCard";
 import { blogs } from "../data/blogdata";
 import { fadeUp } from "../animations/animation";
+import { useEffect } from "react";
 
 const BlogPage = () => {
+
+  useEffect(() => {
+    document.title = "Blogs | Portfolio"
+  }, [])
+
   return (
     <main className="text-shade1 pt-24 px-4 min-h-screen mx-auto max-w-[2550px]">
       <motion.h1

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ContactPage = () => {
   let url =
@@ -12,6 +12,11 @@ const handleCopy = () => {
   navigator.clipboard.writeText(email)
   setIsCopied(true)
 }
+
+useEffect(() => {
+  document.title = "Contact Me | Portfolio"
+}, [])
+
 
   return (
     <main className="px-4 lg:px-8 mx-auto max-w-[2550px]">

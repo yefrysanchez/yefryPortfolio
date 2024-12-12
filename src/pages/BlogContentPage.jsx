@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
 import { useContext, useEffect } from "react";
 import { MyCursorContext } from "../context/CursorContext";
+import NotFoundPage from "./NotFoundPage";
 
 const BlogContentPage = () => {
   const { blog } = useParams();
@@ -15,9 +16,13 @@ const BlogContentPage = () => {
   const { setIsActive } = useContext(MyCursorContext);
 
   useEffect(() => {
-    setIsActive(false);
-  }, []);
+    setIsActive(false); //cursor bug fix
+    document.title = `${blog ? blog : "Yefry Sanchez"} | Portfolio`;
+  }, [blog]);
 
+  if (!data) {
+    return <NotFoundPage />;
+  }
   return (
     <main className="text-shade1  px-4 pt-32">
       <Link
