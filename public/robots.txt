@@ -1,0 +1,25 @@
+# robots.txt for https://yefry.dev
+
+# Allow all user agents (search engine bots) to crawl the entire site
+User-agent: *
+Disallow: /private/
+
+# Block Bingbot from crawling the entire site
+User-agent: Bingbot
+Disallow: /
+
+# Allow Googlebot to access the entire site
+User-agent: Googlebot
+Disallow:
+
+# Prevent all bots from accessing specific files (like admin or config files)
+Disallow: /admin/
+Disallow: /config/
+
+# Allow bots to access images, CSS, and JS files
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Sitemap location (if applicable)
+Sitemap: https://yefry.dev/sitemap.xml
