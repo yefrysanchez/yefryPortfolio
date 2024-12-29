@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { fadeUp } from "../animations/animation";
 
 const FooterSection = () => {
   const container = useRef();
@@ -9,7 +10,6 @@ const FooterSection = () => {
     target: container,
     offset: ["start end", "end end"],
   });
-  
 
   useEffect(() => {
     scrollYProgress.on("change", (e) => {
@@ -19,11 +19,18 @@ const FooterSection = () => {
     });
   }, []);
 
-  const y = useTransform(scrollYProgress, [0, 1], [-700, 0])
+  const y = useTransform(scrollYProgress, [0, 1], [-700, 0]);
 
   return (
     <footer ref={container} className="text-shade1 ">
-      <svg className="mb-40" viewBox="0 0 250 90">
+      <motion.svg
+        variants={fadeUp}
+        initial="initial"
+        viewport={{ once: true }}
+        whileInView={"animate"}
+        className="mb-40"
+        viewBox="0 0 250 90"
+      >
         <path
           id="curve"
           fill="none"
@@ -44,21 +51,37 @@ const FooterSection = () => {
             );
           })}
         </text>
-      </svg>
-      <div className="overflow-hidden bg-shade3">
-      <motion.div style={{y}} className="bg-shade1 h-[250px] flex items-center justify-center">
-        <div className="text-shade3 text-5xl flex gap-5 lg:gap-10">
-          <Link className="group" to={"/"}><i className="fa-solid fa-house group-hover:-translate-y-3 group-hover:transition duration-300"></i></Link>
-          <a className="group" target="_blank" href="https://www.linkedin.com/in/yefrysanchez/"><i className="fa-brands fa-linkedin group-hover:-translate-y-3 group-hover:transition duration-300"></i></a>
-          <Link className="group" to={"/about"}><i className="fa-solid fa-user group-hover:-translate-y-3 group-hover:transition duration-300"></i></Link>
-          <Link className="group" to={"/works"}><i className="fa-solid fa-folder group-hover:-translate-y-3 group-hover:transition duration-300"></i></Link>
-          <Link className="group" to={"/contact"}><i className="fa-solid fa-envelope group-hover:-translate-y-3 group-hover:transition duration-300"></i></Link>
-        </div>
-      </motion.div>
+      </motion.svg>
+      <div className="overflow-hidden bg-shade1">
+        <motion.div
+          style={{ y }}
+          className="bg-shade1 h-[250px] flex items-center justify-center"
+        >
+          <div className="text-shade3 text-5xl flex gap-5 lg:gap-10">
+            <Link className="group" to={"/"}>
+              <i className="fa-solid fa-house group-hover:-translate-y-3 group-hover:transition duration-300"></i>
+            </Link>
+            <a
+              className="group"
+              target="_blank"
+              href="https://www.linkedin.com/in/yefrysanchez/"
+            >
+              <i className="fa-brands fa-linkedin group-hover:-translate-y-3 group-hover:transition duration-300"></i>
+            </a>
+            <Link className="group" to={"/about"}>
+              <i className="fa-solid fa-user group-hover:-translate-y-3 group-hover:transition duration-300"></i>
+            </Link>
+            <Link className="group" to={"/works"}>
+              <i className="fa-solid fa-folder group-hover:-translate-y-3 group-hover:transition duration-300"></i>
+            </Link>
+            <Link className="group" to={"/contact"}>
+              <i className="fa-solid fa-envelope group-hover:-translate-y-3 group-hover:transition duration-300"></i>
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </footer>
   );
 };
 
 export default FooterSection;
-
