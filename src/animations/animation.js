@@ -46,7 +46,7 @@ export const fade = {
 export const fadeUp = {
     initial: {
         opacity: 0,
-        y: 250
+        y: 50
     },
     animate: {
         opacity: 1,

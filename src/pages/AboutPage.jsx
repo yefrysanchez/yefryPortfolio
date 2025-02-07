@@ -5,10 +5,9 @@ import AboutPageDesc from "../components/AboutPageDesc";
 import { useEffect } from "react";
 
 const AboutPage = () => {
-
   useEffect(() => {
-    document.title = "About Me | Portfolio"
-  }, [])
+    document.title = "About Me | Portfolio";
+  }, []);
 
   return (
     <main className="pt-[124px] px-[40px] pb-4 md:px-8 mx-auto max-w-[1650px]">
@@ -94,11 +93,11 @@ const certs = [
 const skills = [
   {
     skill: "Languages & Frameworks:",
-    tech: "JavaScript, TypeScript, React, Node.js, Express.js, HTML, CSS.",
+    tech: "JavaScript, TypeScript, React, React Native, Next.js, Node.js, Express.js, HTML, CSS.",
   },
   {
     skill: "Styling:",
-    tech: "Tailwind CSS, Styled Components, CSS Modules , Framer Motion.",
+    tech: "Tailwind CSS, Styled Components, CSS Modules, Framer Motion.",
   },
   {
     skill: "State Management:",
