@@ -4,8 +4,11 @@ import propTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
+
+
+
   return (
-    <div className="mb-16 ">
+    <div className="mb-16">
       <motion.div
         variants={fadeUp}
         initial="initial"
@@ -14,7 +17,7 @@ const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
       >
         <Link
           to={"/works"}
-          className="group flex gap-2 mb-4  xl:max-w-7xl xl:mx-auto"
+          className="group flex gap-2 mb-4 xl:max-w-7xl xl:mx-auto"
         >
           <span>
             <i className="fa-solid fa-chevron-left"></i>
@@ -39,7 +42,7 @@ const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
           initial="initial"
           viewport={{ once: true }}
           whileInView={"animate"}
-          className="text-2xl inline-block text-shade1/60 capitalize tracking-tighter font-medium "
+          className="text-2xl inline-block text-shade1/60 capitalize tracking-tighter font-medium"
         >
           {projectType}
         </motion.span>
@@ -60,6 +63,8 @@ const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
           </span>
         </motion.a>
       </div>
+
+      {/* Optimized Image with Lazy Loading and WebP Support */}
       <motion.div
         variants={fadeUp}
         initial="initial"
@@ -68,9 +73,13 @@ const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
         className="h-[270px] md:h-[500px] lg:h-[900px] xl:max-w-[1600px] xl:mx-auto overflow-hidden rounded-3xl"
       >
         <img
-          className="h-full w-full object-cover"
-          src={img}
+          className="h-full w-full object-cover transition-opacity duration-500 opacity-0"
+          src={img} // Uses WebP format
           alt="project image"
+          loading="lazy"
+          width="1600"
+          height="900"
+          onLoad={(e) => e.target.classList.remove("opacity-0")} // Fade-in effect
         />
       </motion.div>
     </div>

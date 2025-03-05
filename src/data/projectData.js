@@ -2,7 +2,7 @@ const projects = [
   {
     title: "EZ-POS",
     url: "https://ezpos.pages.dev/",
-    img: "/ezpos.png",
+    img: "/ezpos.webp",
     type: "Point of Sale Web App.",
     desc: "User-friendly point-of-sale software",
     info: `EZ-Pos is a user-friendly point-of-sale software designed to streamline retail operations. With its intuitive interface, EZ-Pos allows businesses to manage sales, inventory, and customer data effortlessly. Features include real-time reporting, customizable receipts, and seamless integration with various payment processors. Whether you're running a café, boutique, or restaurant, EZ-Pos simplifies transactions and enhances customer service, helping you focus on what matters most—growing your business.`,
