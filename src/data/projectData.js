@@ -1,4 +1,23 @@
-const projects = [
+const projects = [  {
+    title: "NextRole",
+    url: "https://nextrole.app", // Replace with your actual domain
+    img: "/nextrole.webp", // Add your image to public/nextrole.webp
+    type: "Job Application Tracker",
+    desc: "Track job applications effortlessly.",
+    info: `NextRole is a powerful job tracking tool designed for junior developers and job seekers. Organize applications by stages like Wishlist, Applied, Interview, and Offer. Create custom boards for different job search goals, and manage all your opportunities in one place.`,
+    role: "I designed and developed the entire system using modern web technologies. My contributions included drag-and-drop interfaces, auth integration, and a dynamic job board system.",
+    lang: "TypeScript, HTML, CSS",
+    framework: "Next.js, TailwindCSS, Shadcn UI",
+    database: "PostgreSQL (via Neon Serverless Postgres)",
+    payment: "N/A",
+    design: "Figma",
+    challenge:
+      "Job seekers, especially juniors, often lose track of where and when they’ve applied, missing out on opportunities and follow-ups.",
+    solution:
+      "NextRole centralizes job applications into visual boards, with the ability to customize, track, and reflect on job search progress easily.",
+    vid1: "/nextrole.mp4", // Add video to public/nextrole.mp4
+    vid2: "/nextrole-mobile.mp4", // Add mobile video to public/nextrole-mobile.mp4
+  },
   {
     title: "EZ-POS",
     url: "https://ezpos.pages.dev/",
