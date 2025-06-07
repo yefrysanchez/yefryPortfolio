@@ -4,7 +4,6 @@ import FooterSection from "./components/FooterSection";
 import Navbar from "./components/Navbar";
 import Lenis from "lenis";
 import AppRouter from "./router/AppRouter";
-import ScrollRestoration from "./components/ScrollRestoration";
 import Cursor from "./components/Cursor";
 import CursorContextData from "./context/CursorContext";
 
@@ -23,7 +22,6 @@ function App() {
   return (
     <div className="bg-shade3 font-inter">
       <CursorContextData>
-        <ScrollRestoration />
         <Cursor />
         <Navbar />
         <AppRouter />
