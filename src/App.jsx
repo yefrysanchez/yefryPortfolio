@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-shade3 font-inter">
+    <div className="bg-shade3 font-inter cursor-none">
       <CursorContextData>
         <Cursor />
         <Navbar />

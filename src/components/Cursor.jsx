@@ -29,16 +29,16 @@ export default function Cursor() {
   useEffect(() => {
     window.addEventListener("mousemove", manageMouseMove);
 
-    // return () => {
-    //   window.removeEventListener("mousemove", manageMouseMove);
-    // };
+    return () => {
+      window.removeEventListener("mousemove", manageMouseMove);
+    };
   }, []);
 
   return (
     <div
       ref={circle}
       
-      className={`transition-all ease-out duration-500 top-0 left-0 fixed rounded-full z-50 pointer-events-none border hidden lg:block bg-shade1`}
+      className={` top-0 left-0 fixed rounded-full z-50 pointer-events-none border hidden lg:block bg-shade1`}
     >
       <div
         className={`transition-all ${
