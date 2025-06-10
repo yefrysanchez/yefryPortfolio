@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import propTypes from "prop-types";
 
-const ProjectCard = ({ img, title, desc }) => {
+const ProjectCard = ({ img, title, desc, span = false }) => {
   const { setIsActive } = useContext(MyCursorContext);
 
   const onMouseEnter = () => {
@@ -16,7 +16,8 @@ const ProjectCard = ({ img, title, desc }) => {
   };
 
   return (
-    <Link to={`/works/${title}`}>
+    <Link to={`/works/${title}`} className={`${
+      span ? "xl:col-span-2" : ""}`}>
       <motion.div
         onClick={() => setIsActive(false)}
         onMouseEnter={onMouseEnter}
@@ -52,4 +53,5 @@ ProjectCard.propTypes = {
   img: propTypes.string.isRequired,
   title: propTypes.string.isRequired,
   desc: propTypes.string.isRequired,
+  span: propTypes.bool,
 };

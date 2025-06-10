@@ -8,6 +8,7 @@ import AppRouter from "./router/AppRouter";
 import Cursor from "./components/Cursor";
 import CursorContextData from "./context/CursorContext";
 import ScrollToTop from "./components/ScrollToTop";
+import { Toaster } from 'sonner'
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
   return (
     <div className="bg-shade3 font-inter cursor-none">
       <CursorContextData>
+        <Toaster />
         <ScrollToTop />
         <Cursor />
         <Navbar />

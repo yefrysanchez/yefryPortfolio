@@ -1,4 +1,5 @@
-const projects = [  {
+const projects = [
+  {
     title: "NextRole",
     url: "https://nextrole.app", // Replace with your actual domain
     img: "/nextrole.webp", // Add your image to public/nextrole.webp
@@ -39,6 +40,47 @@ const projects = [  {
     vid2: "/EZ-POS-mobile.mp4",
   },
   {
+    title: "GH Heating and Cooling",
+    url: "https://gh-steel.vercel.app/",
+    img: "/gh.webp",
+    type: "HVAC Business Website",
+    desc: "Service request and quote platform for HVAC company",
+    info: `GH Heating and Cooling is a professional landing page built for an HVAC business to showcase services and allow clients to request service via an online form. It includes a clean, responsive design with key information about the company, services offered, and an easy-to-use contact form.`,
+    role: "I handled the design and development of the landing page, including responsive layout and form setup.",
+    lang: "Typescript, HTML, CSS",
+    framework: "React.js, TailwindCSS, Shadcn UI",
+    database: "N/A",
+    payment: "N/A",
+    design: "Figma",
+    challenge:
+      "Local service providers often lack a modern web presence, making it harder for potential customers to reach them or understand what services are offered...",
+    solution:
+      "GH Heating and Cooling offers a clean, mobile-friendly page that allows customers to quickly understand services and submit a service request form...",
+    vid1: "/gh.mp4",
+    vid2: "/gh-mobile.mp4",
+  },
+  {
+    title: "Torres Cleaning",
+    url: "https://cleaning-service-orcin.vercel.app/",
+    img: "/torres.webp",
+    type: "Cleaning Service Platform",
+    desc: "Booking, quotes, and appointment management for Torres Cleaning Co.",
+    info: `Torres Cleaning is a modern web platform built for cleaning service businesses to streamline client interaction and internal operations. Clients can request quotes through an elegant landing page, and upon approval, receive payment links via SMS or email. The system allows business owners to track daily appointments, payment statuses, and manage communication in one place.`,
+    role: "I led the design, development, and deployment of the full-stack application including the dashboard, admin tools, payment flow, and cleaner tracking.",
+    lang: "Typescript, HTML, CSS",
+    framework: "Next.js, Node.js, TailwindCSS",
+    database: "PostgreSQL",
+    payment: "Stripe / Zelle",
+    design: "Figma",
+    challenge:
+      "Cleaning companies often rely on notebooks or basic spreadsheets to manage their appointments and client communication...",
+    solution:
+      "Torres Cleaning centralizes quote requests, appointment tracking, and client communication into a single dashboard...",
+    vid1: "/CleanWave.mp4",
+    vid2: "/CleanWave-mobile.mp4",
+  },
+
+  {
     title: "Rulay",
     url: "https://rulay.pages.dev/",
     img: "/rulay.webp",
@@ -75,46 +117,6 @@ const projects = [  {
       "CodeVenue offers a carefully curated selection of lofi tracks...",
     vid1: "/Codevenue.mp4",
     vid2: "/Codevenue-mobile.mp4",
-  },
-  {
-    title: "Torres Cleaning",
-    url: "https://cleaning-service-orcin.vercel.app/",
-    img: "/torres.webp",
-    type: "Cleaning Service Platform",
-    desc: "Booking, quotes, and appointment management for Torres Cleaning Co.",
-    info: `Torres Cleaning is a modern web platform built for cleaning service businesses to streamline client interaction and internal operations. Clients can request quotes through an elegant landing page, and upon approval, receive payment links via SMS or email. The system allows business owners to track daily appointments, payment statuses, and manage communication in one place.`,
-    role: "I led the design, development, and deployment of the full-stack application including the dashboard, admin tools, payment flow, and cleaner tracking.",
-    lang: "Typescript, HTML, CSS",
-    framework: "Next.js, Node.js, TailwindCSS",
-    database: "PostgreSQL",
-    payment: "Stripe / Zelle",
-    design: "Figma",
-    challenge:
-      "Cleaning companies often rely on notebooks or basic spreadsheets to manage their appointments and client communication...",
-    solution:
-      "Torres Cleaning centralizes quote requests, appointment tracking, and client communication into a single dashboard...",
-    vid1: "/CleanWave.mp4",
-    vid2: "/CleanWave-mobile.mp4",
-  },
-  {
-    title: "GH Heating and Cooling",
-    url: "https://gh-steel.vercel.app/",
-    img: "/gh.webp",
-    type: "HVAC Business Website",
-    desc: "Service request and quote platform for HVAC company",
-    info: `GH Heating and Cooling is a professional landing page built for an HVAC business to showcase services and allow clients to request service via an online form. It includes a clean, responsive design with key information about the company, services offered, and an easy-to-use contact form.`,
-    role: "I handled the design and development of the landing page, including responsive layout and form setup.",
-    lang: "Typescript, HTML, CSS",
-    framework: "React.js, TailwindCSS, Shadcn UI",
-    database: "N/A",
-    payment: "N/A",
-    design: "Figma",
-    challenge:
-      "Local service providers often lack a modern web presence, making it harder for potential customers to reach them or understand what services are offered...",
-    solution:
-      "GH Heating and Cooling offers a clean, mobile-friendly page that allows customers to quickly understand services and submit a service request form...",
-    vid1: "/gh.mp4",
-    vid2: "/gh-mobile.mp4",
   },
 ];
 

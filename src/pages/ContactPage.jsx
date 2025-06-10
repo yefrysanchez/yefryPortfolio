@@ -1,22 +1,25 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
 import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 const ContactPage = () => {
   let url =
     "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmgzaHU4dGZ6aWJobjMybW1zZmltY2k5emJoZHc3bDhncXl4cWRtNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.webp";
 
-const [isCopied, setIsCopied] = useState(false)
-const handleCopy = () => {
-  const email = "yefrymsp@gmail.com"
-  navigator.clipboard.writeText(email)
-  setIsCopied(true)
-}
+  const [isCopied, setIsCopied] = useState(false);
+  const handleCopy = () => {
+    const email = "yefrymsp@gmail.com";
+    navigator.clipboard.writeText(email);
+    setIsCopied(true);
+    toast.success("Email copied to clipboard!", {
+      duration: 2000,
+    });
+  };
 
-useEffect(() => {
-  document.title = "Contact Me | Portfolio"
-}, [])
-
+  useEffect(() => {
+    document.title = "Contact Me | Portfolio";
+  }, []);
 
   return (
     <main className="px-4 lg:px-8 mx-auto max-w-[2550px]">
@@ -68,9 +71,10 @@ useEffect(() => {
             viewport={{ once: true }}
             whileInView={"animate"}
             target="_blank"
-            href="https://www.linkedin.com/in/yefrysanchez/"
+            href="https://www.linkedin.com/in/yefrysanchez/" 
+            className="h-fit "
           >
-            <div className=" bg-shade2/15 rounded-3xl flex justify-center items-center p-6 gap-4">
+            <div className=" bg-shade2/15 rounded-3xl flex justify-center items-center p-6 gap-4 hover:bg-shade2/50 duration-200 cursor-pointer">
               <span className="text-xl font-medium">LinkedIn</span>{" "}
               <span>
                 <i className="fa-brands fa-linkedin text-3xl"></i>
@@ -78,17 +82,21 @@ useEffect(() => {
             </div>
           </motion.a>{" "}
           <motion.div
-          onClick={handleCopy}
+            onClick={handleCopy}
             variants={fadeUp}
             initial="initial"
             viewport={{ once: true }}
             whileInView={"animate"}
-            className="cursor-pointer rounded-3xl h-fit bg-shade2/15 active:bg-shade2/50 select-none duration-200"
+            className="cursor-pointer rounded-3xl h-fit bg-shade2/15 hover:bg-shade2/50 select-none duration-200"
           >
             <div className="flex justify-center items-center p-6 gap-4">
               <span className="text-xl font-medium">yefrymsp@gmail.com</span>{" "}
               <span>
-                <i className={`fa-solid ${isCopied ? "fa-check" :"fa-copy" } text-3xl`}></i>
+                <i
+                  className={`fa-solid ${
+                    isCopied ? "fa-check" : "fa-copy"
+                  } text-3xl`}
+                ></i>
               </span>
             </div>
           </motion.div>

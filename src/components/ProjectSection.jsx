@@ -16,11 +16,11 @@ const ProjectSection = () => {
         <a href="/works">Works</a>
       </h2>
       <div className="grid gap-8 xl:grid-cols-2">
-        {projects.map((p) => (
+        {projects.slice(0,4).map((p) => (
           <ProjectCard key={p.title} title={p.title} desc={p.desc} img={p.img} />
         ))}
 
-        <ProjectCard desc="" title="" img="/more.webp" />
+        <ProjectCard span={true} desc="" title="" img="/more.webp" />
       </div>
     </motion.section>
   );
