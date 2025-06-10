@@ -1,41 +1,43 @@
 // App.js
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import "./App.css";
 import FooterSection from "./components/FooterSection";
 import Navbar from "./components/Navbar";
-import Lenis from "lenis";
+// import Lenis from "lenis";
 import AppRouter from "./router/AppRouter";
 import Cursor from "./components/Cursor";
 import CursorContextData from "./context/CursorContext";
 import ScrollToTop from "./components/ScrollToTop";
-import { Toaster } from 'sonner'
+import { Toaster } from "sonner";
 
 function App() {
-  useEffect(() => {
-    const lenis = new Lenis();
+  // useEffect(() => {
+  //   const lenis = new Lenis();
 
-    // Make lenis accessible globally (window or React Context are options)
-    window.lenis = lenis;
+  //   // Make lenis accessible globally (window or React Context are options)
+  //   window.lenis = lenis;
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+  //   function raf(time) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
 
-    requestAnimationFrame(raf);
-  }, []);
+  //   requestAnimationFrame(raf);
+  // }, []);
 
   return (
-    <div className="bg-shade3 font-inter cursor-none">
-      <CursorContextData>
-        <Toaster />
-        <ScrollToTop />
-        <Cursor />
-        <Navbar />
-        <AppRouter />
-      </CursorContextData>
-      <FooterSection />
-    </div>
+    <>
+      <ScrollToTop />
+      <div className="bg-shade3 font-inter cursor-none">
+        <CursorContextData>
+          <Toaster />
+          <Cursor />
+          <Navbar />
+          <AppRouter />
+        </CursorContextData>
+        <FooterSection />
+      </div>
+    </>
   );
 }
 

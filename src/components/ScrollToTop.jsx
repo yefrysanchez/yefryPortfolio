@@ -5,12 +5,7 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Use Lenis for smooth scroll if available
-    if (window.lenis) {
-      window.lenis.scrollTo(0, { immediate: true }); // or smooth: false
-    } else {
-      window.scrollTo(0, 0);
-    }
+    window.scrollTo(0, 0);
   }, [pathname]);
 
   return null;
