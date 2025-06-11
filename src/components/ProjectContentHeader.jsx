@@ -2,11 +2,14 @@ import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
 import propTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { toast } from "sonner";
 
 const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
-
-
-
+  const handleProjectNotFinished = () => {
+    toast.error("This project is not finished yet, please check back later.", {
+      duration: 2000,
+    });
+  };
   return (
     <div className="mb-16">
       <motion.div
@@ -17,7 +20,7 @@ const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
       >
         <Link
           to={"/works"}
-          className="group flex gap-2 mb-4 xl:max-w-7xl xl:mx-auto"
+          className="group flex gap-2 mb-4 xl:max-w-7xl xl:mx-auto w-fit"
         >
           <span>
             <i className="fa-solid fa-chevron-left"></i>
@@ -46,22 +49,39 @@ const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
         >
           {projectType}
         </motion.span>
-        <motion.a
-          variants={fadeUp}
-          initial="initial"
-          viewport={{ once: true }}
-          whileInView={"animate"}
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="text-shade3 inline-block bg-shade1 rounded-2xl py-4 px-8 hover:opacity-90 transition duration-300 group">
+        {url ? (
+          <motion.a
+            variants={fadeUp}
+            initial="initial"
+            viewport={{ once: true }}
+            whileInView={"animate"}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="text-shade3 text-nowrap inline-block bg-shade1 rounded-2xl py-4 px-8 hover:opacity-90 transition duration-300 group">
+              Live Demo
+              <span className="ml-2">
+                <i className="fa-solid fa-arrow-up-right-from-square group-hover:translate-x-1 transition duration-300"></i>
+              </span>
+            </span>
+          </motion.a>
+        ) : (
+          <motion.span
+            role="button"
+            variants={fadeUp}
+            initial="initial"
+            viewport={{ once: true }}
+            whileInView={"animate"}
+            onClick={() => handleProjectNotFinished()}
+            className="text-nowrap select-none text-shade3 cursor-pointer inline-block bg-shade1 rounded-2xl py-4 px-8 hover:opacity-90 transition-opacity duration-300 group "
+          >
             Live Demo
             <span className="ml-2">
               <i className="fa-solid fa-arrow-up-right-from-square group-hover:translate-x-1 transition duration-300"></i>
             </span>
-          </span>
-        </motion.a>
+          </motion.span>
+        )}
       </div>
 
       {/* Optimized Image with Lazy Loading and WebP Support */}

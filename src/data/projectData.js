@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "NextRole",
-    url: "https://nextrole.app", // Replace with your actual domain
+    url: "", // Replace with your actual domain
     img: "/nextrole.webp", // Add your image to public/nextrole.webp
     type: "Job Application Tracker",
     desc: "Track job applications effortlessly.",
