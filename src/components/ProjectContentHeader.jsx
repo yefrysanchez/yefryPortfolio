@@ -17,10 +17,11 @@ const ProjectContentHeader = ({ projectTitle, projectType, img, url }) => {
         initial="initial"
         viewport={{ once: true }}
         whileInView={"animate"}
+        className="xl:max-w-7xl xl:mx-auto"
       >
         <Link
           to={"/works"}
-          className="group flex gap-2 mb-4 xl:max-w-7xl xl:mx-auto w-fit"
+          className="group flex gap-2 mb-4 opacity-65 hover:opacity-100 transition-all duration-200 w-fit"
         >
           <span>
             <i className="fa-solid fa-chevron-left"></i>
