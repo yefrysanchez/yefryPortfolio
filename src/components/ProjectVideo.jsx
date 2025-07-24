@@ -9,7 +9,7 @@ const ProjectVideo = ({ src }) => {
       initial="initial"
       viewport={{ once: true }}
       whileInView={"animate"}
-      className="h-[300px] md:h-[500px] select-none"
+      className="h-[300px] md:h-[500px] select-none rounded-2xl overflow-hidden"
     >
       <video
         autoPlay

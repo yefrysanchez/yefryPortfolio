@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeUp, scaleY } from "../animations/animation";
+import { Link } from "react-router-dom";
 
 const SoftDevSection = () => {
   return (
@@ -32,7 +33,7 @@ const SoftDevSection = () => {
           className="lg:flex items-center"
         >
           <motion.div
-          custom={1}
+            custom={1}
             viewport={{ once: true }}
             variants={scaleY}
             initial="initial"
@@ -50,19 +51,21 @@ const SoftDevSection = () => {
           >
             NYC
           </motion.span>{" "}
-          <motion.span
-            variants={fadeUp}
-            initial="initial"
-            whileInView={"animate"}
-            viewport={{ once: true }}
-            className="overflow-hidden rounded-full"
-          >
-            <img
-              className="h-[12vw] w-[16vw] lg:w-[150px] lg:h-[150px] object-[center_-2px] xl:h-[170px] xl:w-[580px] xl:hover: xl:transition-all duration-300 object-cover scale-150 md:scale-125 xl:scale-100 xl:object-[center_-80px] xl:hover:object-[center_-120px]"
-              src="/profile.jpeg"
-              alt="profile image"
-            />
-          </motion.span>
+          <Link to={"/about"}>
+            <motion.div
+              variants={fadeUp}
+              initial="initial"
+              whileInView={"animate"}
+              viewport={{ once: true }}
+              className="overflow-hidden rounded-full"
+            >
+              <img
+                className="h-[12vw] w-[16vw] lg:w-[150px] lg:h-[150px] object-[center_-2px] xl:h-[170px] xl:w-[580px] xl:hover: xl:transition-all duration-300 object-cover scale-150 md:scale-125 xl:scale-100 xl:object-[center_-80px] xl:hover:object-[center_-120px]"
+                src="/profile.jpeg"
+                alt="profile image"
+              />
+            </motion.div>
+          </Link>
         </span>
       </h2>
     </section>
