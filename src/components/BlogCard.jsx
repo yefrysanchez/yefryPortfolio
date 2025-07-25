@@ -3,7 +3,7 @@ import { MyCursorContext } from "../context/CursorContext";
 import { useContext } from "react";
 import propTypes from "prop-types";
 
-const BlogCard = ({ title, img }) => {
+const BlogCard = ({ title, img, date, readingTime }) => {
   const { setIsActive } = useContext(MyCursorContext);
 
   const onMouseEnter = () => {
@@ -19,17 +19,30 @@ const BlogCard = ({ title, img }) => {
       onMouseLeave={onMouseLeave}
       to={`/blogs/${title}`}
     >
-      <div className="group lg:h-[550px] rounded-3xl overflow-hidden text-shade1 flex flex-col border border-shade2">
-        <div className="h-full overflow-hidden">
+      <div className="group text-shade1 w-full text-3xl  flex flex-col gap-4 min-h-40 h-full bg-shade2/10 p-4 rounded-xl">
+        <div className="h-full rounded-xl overflow-hidden">
           <img
-            className="h-full w-full object-cover group-hover:scale-105 transition duration-500"
+            className="h-full w-full object-cover object-center group-hover:scale-105 transition duration-500"
             src={img}
             alt="blog image"
           />
         </div>
-        <p className="p-4 text-xl font-bold uppercase z-20 text-center">
-          {title}
-        </p>
+       <div className=" h-full flex flex-col gap-2 justify-between">
+        <>
+          <div className="mb-4">
+            <span className="bg-shade2/30 p-2 rounded-lg text-xs">
+              Development
+            </span>
+          </div>
+          <h3 className="font-semibold md:text-3xl tracking-tighter">
+            {title} Lorem ipsum dolor sit amet consectetur.
+          </h3>
+        </>
+        <div className="grid font-thin text-sm mt-auto">
+          <span className="opacity-50">{readingTime} min</span>
+          <span className="font-medium">{date}</span>
+        </div>
+      </div>
       </div>
     </Link>
   );
@@ -40,4 +53,6 @@ export default BlogCard;
 BlogCard.propTypes = {
   title: propTypes.string.isRequired,
   img: propTypes.string.isRequired,
+  date: propTypes.string.isRequired,
+  readingTime: propTypes.string.isRequired
 };

@@ -29,7 +29,7 @@ const BlogPage = () => {
         className="grid md:grid-cols-2 xl:grid-cols-3 gap-8"
       >
         {blogs.map((e, i) => (
-          <BlogCard img={e.img} title={e.title.replace(" ", "")} key={i} />
+          <BlogCard img={e.img} date={e.date} readingTime={e.readingTime} title={e.title.replace(" ", "")} key={i} />
         ))}
       </motion.div>
     </main>
