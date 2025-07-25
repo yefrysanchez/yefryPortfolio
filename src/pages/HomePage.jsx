@@ -3,6 +3,7 @@ import AboutSection from "../components/AboutSection"
 import Hero from "../components/Hero"
 import ProjectSection from "../components/ProjectSection"
 import SoftDevSection from "../components/SoftDevSection"
+import BlogSection from "../components/BlogSection"
 
 const HomePage = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Hero />
       <SoftDevSection/>
       <AboutSection />
+      <BlogSection />
       <ProjectSection />
 
     </main>

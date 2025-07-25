@@ -23,6 +23,7 @@ const BlogContentPage = () => {
   if (!data) {
     return <NotFoundPage />;
   }
+
   return (
     <main className="text-shade1  px-4 pt-32">
       <Link
@@ -66,7 +67,7 @@ const BlogContentPage = () => {
           <img
             className="w-full h-full object-cover"
             src={data.img}
-            alt="blog img"
+            alt="blog image"
           />
         </motion.div>
       </div>

@@ -1,22 +1,24 @@
 import { Link } from "react-router-dom";
 import { MyCursorContext } from "../context/CursorContext";
 import { useContext } from "react";
+import propTypes from "prop-types";
 
-const BlogCard = ({title,img}) => {
-
-
-  const {setIsActive} = useContext(MyCursorContext)
+const BlogCard = ({ title, img }) => {
+  const { setIsActive } = useContext(MyCursorContext);
 
   const onMouseEnter = () => {
-    setIsActive(true)
-  }
+    setIsActive(true);
+  };
   const onMouseLeave = () => {
-    setIsActive(false)
-  }
-
+    setIsActive(false);
+  };
 
   return (
-    <Link onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} to={`/blogs/${title}`}>
+    <Link
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      to={`/blogs/${title}`}
+    >
       <div className="group lg:h-[550px] rounded-3xl overflow-hidden text-shade1 flex flex-col border border-shade2">
         <div className="h-full overflow-hidden">
           <img
@@ -34,3 +36,8 @@ const BlogCard = ({title,img}) => {
 };
 
 export default BlogCard;
+
+BlogCard.propTypes = {
+  title: propTypes.string.isRequired,
+  img: propTypes.string.isRequired,
+};

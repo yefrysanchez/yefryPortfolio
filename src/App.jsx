@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <div className="bg-shade3 font-inter cursor-none">
+      <div className="bg-shade3 font-inter lg:cursor-none">
         <CursorContextData>
           <Toaster />
           <Cursor />
