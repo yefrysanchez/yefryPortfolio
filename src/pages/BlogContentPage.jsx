@@ -6,6 +6,7 @@ import { fadeUp } from "../animations/animation";
 import { useContext, useEffect } from "react";
 import { MyCursorContext } from "../context/CursorContext";
 import NotFoundPage from "./NotFoundPage";
+import InThisarticle from "../components/InThisarticle";
 
 const BlogContentPage = () => {
   const { blog } = useParams();
@@ -72,34 +73,37 @@ const BlogContentPage = () => {
         </motion.div>
       </div>
 
-      <div className="text-xl xl:max-w-[1300px] xl:mx-auto mb-20">
-        <motion.p
-          variants={fadeUp}
-          initial="initial"
-          viewport={{ once: true }}
-          whileInView={"animate"}
-          className="mb-12 text-shade1/85"
-        >
-          {data.para1}
-        </motion.p>
-        <motion.p
-          variants={fadeUp}
-          initial="initial"
-          viewport={{ once: true }}
-          whileInView={"animate"}
-          className="mb-12 text-shade1/85"
-        >
-          {data.para1}
-        </motion.p>
-        <motion.p
-          variants={fadeUp}
-          initial="initial"
-          viewport={{ once: true }}
-          whileInView={"animate"}
-          className=" text-shade1/85"
-        >
-          {data.para1}
-        </motion.p>
+      <div className="text-xl xl:max-w-[1300px] xl:mx-auto mb-20 flex flex-col-reverse lg:flex-row gap-4 relative">
+        <div className="w-full lg:w-2/3">
+          <motion.p
+            variants={fadeUp}
+            initial="initial"
+            viewport={{ once: true }}
+            whileInView={"animate"}
+            className="mb-12 text-shade1/85"
+          >
+            {data.para1}
+          </motion.p>
+          <motion.p
+            variants={fadeUp}
+            initial="initial"
+            viewport={{ once: true }}
+            whileInView={"animate"}
+            className="mb-12 text-shade1/85"
+          >
+            {data.para1}
+          </motion.p>
+          <motion.p
+            variants={fadeUp}
+            initial="initial"
+            viewport={{ once: true }}
+            whileInView={"animate"}
+            className=" text-shade1/85"
+          >
+            {data.para1}
+          </motion.p>
+        </div>
+        <InThisarticle />
       </div>
       <RecommendedBlog />
     </main>
