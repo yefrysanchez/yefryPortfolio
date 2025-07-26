@@ -16,9 +16,10 @@ const BlogContentPage = () => {
 
   const { setIsActive } = useContext(MyCursorContext);
 
+
   useEffect(() => {
     setIsActive(false); //cursor bug fix
-    document.title = `${blog ? blog : "Yefry Sanchez"} | Portfolio`;
+    document.title = `Blog | ${blog}`;
   }, [blog]);
 
   if (!data) {
@@ -45,6 +46,7 @@ const BlogContentPage = () => {
           initial="initial"
           viewport={{ once: true }}
           whileInView={"animate"}
+          
           className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl xl:max-w-[1300px] xl:mx-auto uppercase tracking-tight mb-4 font-bold"
         >
           {data.title}

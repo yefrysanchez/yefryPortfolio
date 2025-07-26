@@ -29,7 +29,7 @@ const RecommendedBlog = () => {
         className="grid md:grid-cols-2 xl:grid-cols-3 gap-8"
       >
         {filteredBlog.map((e, i) => (
-          <BlogCard img={e.img} title={e.title.replace(" ", "")} key={i} />
+          <BlogCard readingTime={e.readingTime} date={e.date} img={e.img} title={e.title.replace(" ", "")} key={i} />
         ))}
       </motion.div>
     </div>

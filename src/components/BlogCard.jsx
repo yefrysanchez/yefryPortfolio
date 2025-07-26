@@ -19,7 +19,7 @@ const BlogCard = ({ title, img, date, readingTime }) => {
       onMouseLeave={onMouseLeave}
       to={`/blogs/${title}`}
     >
-      <div className="group text-shade1 w-full text-3xl  flex flex-col gap-4 min-h-40 h-full bg-shade2/10 p-4 rounded-xl">
+      <div className="group text-shade1 w-full text-3xl hover:bg-shade2/20 transition-colors duration-300 flex flex-col gap-4 min-h-40 h-full bg-shade2/10 p-4 rounded-xl">
         <div className="h-full rounded-xl overflow-hidden">
           <img
             className="h-full w-full object-cover object-center group-hover:scale-105 transition duration-500"
