@@ -19,11 +19,11 @@ const BlogSliderCard = ({ isSelected, src, title, date }) => {
       onMouseLeave={onMouseLeave}
       className={`${
         isSelected ? "" : "opacity-50 transition-opacity duration-300"
-      } text-shade1 hover:bg-shade2/20 transition-colors duration-300 mx-auto w-2/3 md:w-full text-xl  flex flex-col md:flex-row gap-4 min-h-40 bg-shade2/10 p-4 rounded-xl shrink-0`}
+      } text-shade1 group hover:bg-shade2/20 transition-colors duration-300 mx-auto w-2/3 md:w-full text-xl  flex flex-col md:flex-row gap-4 min-h-40 bg-shade2/10 p-4 rounded-xl shrink-0`}
     >
       <div className="md:h-[400px] md:w-3/5 rounded-xl overflow-hidden">
         <img
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
           src={src}
           alt="blog image"
         />
