@@ -11,6 +11,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { fadeUp } from "../animations/animation";
 
 const InThisarticle = () => {
   const [isCopied, setisCopied] = useState(false);
@@ -26,7 +27,13 @@ const InThisarticle = () => {
   };
 
   return (
-    <article className="w-full h-fit lg:sticky right-0 top-24 lg:w-1/3 text-shade1 bg-shade2/10 p-4 rounded-xl">
+    <motion.article
+      variants={fadeUp}
+      initial="initial"
+      viewport={{ once: true }}
+      whileInView={"animate"}
+      className="w-full h-fit lg:sticky right-0 top-24 lg:w-1/3 text-shade1 bg-shade2/10 p-4 rounded-xl"
+    >
       <h4 className="uppercase tracking-tighter font-extrabold text-xs">
         In this article
       </h4>
@@ -49,45 +56,44 @@ const InThisarticle = () => {
       </div>
 
       <div className="mt-6 flex gap-2">
-  <AnimatePresence>
-    {isShared && (
-      <motion.div
-        className="flex gap-2 bg-shade3 rounded-xl"
-        layout // This enables layout animations for width and position changes
-        initial={{ opacity: 0, width: 0 }} // Start with width 0 (hidden)
-        animate={{ opacity: 1, width: 'auto' }} // Animate to full width
-        exit={{ opacity: 0, width: 0 }} // Shrink width back to 0 on exit
-        transition={{ duration: 0.3 }} // Optional: Adjust transition duration
-      >
-        <button className="p-4 hover:bg-shade2/50 transition-colors duration-300 select-none rounded-xl">
-          <Twitter />
-        </button>
-        <button className="p-4 hover:bg-shade2/50 transition-colors duration-300 select-none rounded-xl">
-          <Facebook />
-        </button>
-        <button className="p-4 hover:bg-shade2/50 transition-colors duration-300 select-none rounded-xl">
-          <Linkedin />
-        </button>
-      </motion.div>
-    )}
-  </AnimatePresence>
+        <AnimatePresence>
+          {isShared && (
+            <motion.div
+              className="flex gap-2 bg-shade3 rounded-xl"
+              layout // This enables layout animations for width and position changes
+              initial={{ opacity: 0, width: 0 }} // Start with width 0 (hidden)
+              animate={{ opacity: 1, width: "auto" }} // Animate to full width
+              exit={{ opacity: 0, width: 0 }} // Shrink width back to 0 on exit
+              transition={{ duration: 0.3 }} // Optional: Adjust transition duration
+            >
+              <button className="p-4 hover:bg-shade2/50 transition-colors duration-300 select-none rounded-xl">
+                <Twitter />
+              </button>
+              <button className="p-4 hover:bg-shade2/50 transition-colors duration-300 select-none rounded-xl">
+                <Facebook />
+              </button>
+              <button className="p-4 hover:bg-shade2/50 transition-colors duration-300 select-none rounded-xl">
+                <Linkedin />
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
-  <button
-    onClick={() => setIsShared(!isShared)}
-    className="bg-shade3 p-4 rounded-xl hover:bg-shade2/50 transition-colors duration-300 select-none"
-  >
-    <motion.div
-   
-    >
-      {isShared ? <X /> : <Share2 />}
-    </motion.div>
-  </button>
+        <button
+          onClick={() => setIsShared(!isShared)}
+          className="bg-shade3 p-4 rounded-xl hover:bg-shade2/50 transition-colors duration-300 select-none"
+        >
+          <motion.div>{isShared ? <X /> : <Share2 />}</motion.div>
+        </button>
 
-  <button onClick={handleCopy} className="bg-shade3 z-10 hover:bg-shade2/50 transition-colors duration-300 select-none p-4 rounded-xl">
-    {isCopied ? <CheckIcon /> : <Link />}
-  </button>
-</div>
-    </article>
+        <button
+          onClick={handleCopy}
+          className="bg-shade3 z-10 hover:bg-shade2/50 transition-colors duration-300 select-none p-4 rounded-xl"
+        >
+          {isCopied ? <CheckIcon /> : <Link />}
+        </button>
+      </div>
+    </motion.article>
   );
 };
 

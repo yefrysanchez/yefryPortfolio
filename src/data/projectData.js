@@ -25,7 +25,7 @@ const projects = [
     img: "/ezpos.webp",
     type: "Point of Sale Web App.",
     desc: "User-friendly point-of-sale software",
-    info: `EZ-Pos is a user-friendly point-of-sale software designed to streamline retail operations...`,
+    info: `EZ-POS is a user-friendly point-of-sale software designed to streamline retail operations. With its intuitive interface, EZ-POS allows businesses to manage sales, inventory, and customer data effortlessly. Features include real-time reporting, customizable receipts, and seamless integration with various payment processors. Whether you're running a café, boutique, or restaurant, EZ-POS simplifies transactions and enhances customer service, helping you focus on what matters most—growing your business.`,
     role: "My key contributions included designing the software architecture, developing the front-end interface and backend development.",
     lang: "Typescript, HTML, CSS",
     framework: "React, Nodejs, TailwindCSS",

@@ -9,7 +9,7 @@ const RecommendedBlog = () => {
   const filteredBlog = blogs.filter((e) => e.title.replace(" ", "") !== blog);
 
   return (
-    <div className="mb-12">
+    <div className="mb-12 mx-auto max-w-[1600px]">
       <div className="mb-8">
         <motion.h2
           variants={fadeUp}

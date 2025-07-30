@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import FilterBtn from "./FilterBtn";
+import { fadeUp } from "../animations/animation";
 
 const BlogFilter = () => {
   const techTopics = [
@@ -11,10 +13,14 @@ const BlogFilter = () => {
     "Internet of Things (IoT)",
   ];
 
-  console.log(techTopics);
-
   return (
-    <div className="mb-4 grid gap-4">
+    <motion.div
+      variants={fadeUp}
+      initial="initial"
+      viewport={{ once: true }}
+      whileInView={"animate"}
+      className="mb-4 grid gap-4 2xl:grid-cols-2"
+    >
       <input
         type="search"
         className="w-full px-4 py-2 bg-shade2/10 rounded-xl"
@@ -25,7 +31,7 @@ const BlogFilter = () => {
           <FilterBtn filter={topic} key={index} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

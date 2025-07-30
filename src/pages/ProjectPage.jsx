@@ -19,7 +19,7 @@ const ProjectPage = () => {
       whileInView={"animate"}
       className="min-h-screen px-4 lg:px-8 mb-12 pt-24 mx-auto max-w-[2550px]"
     >
-      <h2 className="text-shade1 select-none uppercase tracking-tighter text-[50px] lg:text-[100px] 2xl:text-[18vw] font-bold">
+      <h2 className="text-shade1 select-none uppercase tracking-tighter text-[50px] lg:text-[100px] 2xl:text-[20vw] font-bold">
         Works
       </h2>
       <div className="grid xl:grid-cols-2 gap-12">

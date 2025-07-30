@@ -38,6 +38,7 @@ const BlogPage = () => {
             key={i}
           />
         ))}
+        
       </motion.div>
     </main>
   );
