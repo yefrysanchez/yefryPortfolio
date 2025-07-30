@@ -2,7 +2,7 @@ const projects = [
   {
     title: "NextRole",
     url: "", // Replace with your actual domain
-    img: "/nextrole.webp", // Add your image to public/nextrole.webp
+    img: "/nextrole.webp",
     type: "Job Application Tracker",
     desc: "Track job applications effortlessly.",
     info: `NextRole is a powerful job tracking tool designed for junior developers and job seekers. Organize applications by stages like Wishlist, Applied, Interview, and Offer. Create custom boards for different job search goals, and manage all your opportunities in one place.`,
@@ -16,8 +16,8 @@ const projects = [
       "Job seekers, especially juniors, often lose track of where and when they’ve applied, missing out on opportunities and follow-ups.",
     solution:
       "NextRole centralizes job applications into visual boards, with the ability to customize, track, and reflect on job search progress easily.",
-    vid1: "/nextrole.mp4", // Add video to public/nextrole.mp4
-    vid2: "/nextrole-mobile.mp4", // Add mobile video to public/nextrole-mobile.mp4
+    vid1: "/nextrole.mp4",
+    vid2: "/nextrole-mobile.mp4",
   },
   {
     title: "EZ-POS",
@@ -33,9 +33,9 @@ const projects = [
     payment: "N/A",
     design: "Behance",
     challenge:
-      "Many small retailers use manual processes for inventory management and sales tracking...",
+      "Many small retailers use manual processes for inventory management and sales tracking, leading to inefficiencies and human error.",
     solution:
-      "EZ-Pos automates inventory management, providing real-time updates and alerts...",
+      "EZ-POS automates inventory management, providing real-time updates and alerts, reducing errors, and giving business owners better control and insights into their operations.",
     vid1: "/EZ-POS.mp4",
     vid2: "/EZ-POS-mobile.mp4",
   },
@@ -53,9 +53,9 @@ const projects = [
     payment: "N/A",
     design: "Figma",
     challenge:
-      "Local service providers often lack a modern web presence, making it harder for potential customers to reach them or understand what services are offered...",
+      "Local service providers often lack a modern web presence, making it harder for potential customers to reach them or understand what services are offered, resulting in missed opportunities.",
     solution:
-      "GH Heating and Cooling offers a clean, mobile-friendly page that allows customers to quickly understand services and submit a service request form...",
+      "GH Heating and Cooling offers a clean, mobile-friendly page that allows customers to quickly understand services and submit a service request form, increasing client engagement and bookings.",
     vid1: "/gh.mp4",
     vid2: "/gh-mobile.mp4",
   },
@@ -73,29 +73,29 @@ const projects = [
     payment: "Stripe / Zelle",
     design: "Figma",
     challenge:
-      "Cleaning companies often rely on notebooks or basic spreadsheets to manage their appointments and client communication...",
+      "Cleaning companies often rely on notebooks or basic spreadsheets to manage their appointments and client communication, which leads to disorganization and delays in responses or payments.",
     solution:
-      "Torres Cleaning centralizes quote requests, appointment tracking, and client communication into a single dashboard...",
+      "Torres Cleaning centralizes quote requests, appointment tracking, and client communication into a single dashboard, improving operational efficiency and client satisfaction.",
     vid1: "/CleanWave.mp4",
     vid2: "/CleanWave-mobile.mp4",
   },
-
   {
     title: "Rulay",
     url: "https://rulay.pages.dev/",
     img: "/rulay.webp",
     type: "Traveling website",
     desc: "Discover amazing places.",
-    info: `Discover the vibrant beauty of the Dominican Republic with Rulay!...`,
-    role: "As the project lead and web developer...",
+    info: `Discover the vibrant beauty of the Dominican Republic with Rulay! Our website offers a curated guide to the country's most breathtaking tourist destinations, from pristine beaches and lush rainforests to historic sites and lively cities. Whether you're planning a relaxing getaway or an adventurous exploration, Rulay has you covered.`,
+    role: "As the project lead and web developer, I designed and built the platform, organized destination data, and implemented user-friendly navigation to enhance user experience.",
     lang: "Javascript, HTML, CSS",
     framework: "React, Nodejs, TailwindCSS",
     database: "MongoDB",
     payment: "N/A",
     design: "Figma",
     challenge:
-      "Many travelers struggle to find reliable and comprehensive information...",
-    solution: "Rulay organizes information into easily navigable categories...",
+      "Many travelers struggle to find reliable and comprehensive information about destinations in the Dominican Republic, leading to missed experiences or poor planning.",
+    solution:
+      "Rulay organizes information into easily navigable categories, offering users a one-stop travel planning tool with trusted recommendations and vibrant imagery.",
     vid1: "/Rulay.mp4",
     vid2: "/Rulay-mobile.mp4",
   },
@@ -105,16 +105,17 @@ const projects = [
     img: "/codevenue.webp",
     type: "Music Web App",
     desc: "Lofi music web app for developers",
-    info: `Welcome to CodeVenue, where coding meets creativity through lofi music...`,
-    role: "As the project creator and web developer...",
+    info: `CodeVenue is a music web app where coding meets creativity through the soothing sounds of Lofi music. Designed with developers in mind, our platform offers a curated selection of Lofi beats to enhance your coding sessions and foster productivity.`,
+    role: "As the project creator and web developer, I handled everything from UI design to integrating the audio player and managing content delivery for seamless playback.",
     lang: "Typescript, HTML, CSS.",
     framework: "React, Nodejs, TailwindCSS.",
     database: "MongoDB and Google Cloud.",
     payment: "N/A",
     design: "Figma.",
-    challenge: "Many developers struggle to find the right music...",
+    challenge:
+      "Many developers struggle to find the right music that keeps them focused without distractions or the need to switch platforms frequently.",
     solution:
-      "CodeVenue offers a carefully curated selection of lofi tracks...",
+      "CodeVenue offers a carefully curated selection of lofi tracks, eliminating the need to search manually and providing a distraction-free music experience tailored to coding sessions.",
     vid1: "/Codevenue.mp4",
     vid2: "/Codevenue-mobile.mp4",
   },
