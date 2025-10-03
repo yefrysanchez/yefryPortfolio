@@ -48,8 +48,8 @@ const ContactPage = () => {
         </motion.div>
       </div>
 
-      <div className="lg:flex gap-8 max-w-[1300px] lg:mx-auto mb-12">
-        <div className="mb-8 lg:flex-1">
+      <div className="lg:flex items-center gap-8 max-w-[1300px] lg:mx-auto mb-12">
+        <div className="mb-8 lg:mb-0 lg:flex-1">
           <motion.p
             variants={fadeUp}
             initial="initial"
@@ -64,7 +64,7 @@ const ContactPage = () => {
           </motion.p>
         </div>
 
-        <div className="text-shade1 flex flex-col md:flex-row gap-4 lg:flex-1 ">
+        <div className="text-shade1  flex flex-col lg:flex-row  gap-4 lg:flex-1 ">
           <motion.a
             variants={fadeUp}
             initial="initial"
@@ -75,9 +75,25 @@ const ContactPage = () => {
             className="h-fit "
           >
             <div className=" bg-shade2/15 rounded-3xl flex justify-center items-center p-6 gap-4 hover:bg-shade2/50 duration-200 cursor-pointer">
-              <span className="text-xl font-medium">LinkedIn</span>{" "}
+              <span className="text-xl font-medium tracking-tighter">LinkedIn</span>{" "}
               <span>
                 <i className="fa-brands fa-linkedin text-3xl"></i>
+              </span>
+            </div>
+          </motion.a>{" "}
+          <motion.a
+            variants={fadeUp}
+            initial="initial"
+            viewport={{ once: true }}
+            whileInView={"animate"}
+            target="_blank"
+            href="https://github.com/yefrysanchez" 
+            className="h-fit "
+          >
+            <div className=" bg-shade2/15 rounded-3xl flex justify-center items-center p-6 gap-4 hover:bg-shade2/50 duration-200 cursor-pointer">
+              <span className="text-xl font-medium tracking-tighter">Github</span>{" "}
+              <span>
+                <i className="fa-brands fa-square-github text-3xl"></i>
               </span>
             </div>
           </motion.a>{" "}
@@ -90,7 +106,7 @@ const ContactPage = () => {
             className="cursor-pointer rounded-3xl h-fit bg-shade2/15 hover:bg-shade2/50 select-none duration-200"
           >
             <div className="flex justify-center items-center p-6 gap-4">
-              <span className="text-xl font-medium">yefrymsp@gmail.com</span>{" "}
+              <span className="text-xl font-medium tracking-tighter">yefrymsp@gmail.com</span>{" "}
               <span>
                 <i
                   className={`fa-solid ${
