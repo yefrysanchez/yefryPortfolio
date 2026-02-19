@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../animations/animation";
-import resume from "../assets/YSResume.pdf";
+import resume from "../assets/YSResumeED.pdf";
 
 const AboutPageDesc = () => {
   const OpenPDFButton = () => {
