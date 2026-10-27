@@ -73,21 +73,24 @@ export default AboutPage;
 
 const certs = [
   {
-    title: "Meta Front-End Developer Specialization",
-    url: "https://www.coursera.org/account/accomplishments/specialization/ROUJXCAW6O6Q",
-  },
-  {
     title: "Google Cloud: Associate Cloud Engineer",
     url: "https://www.credly.com/badges/7ac77b31-e544-4863-9845-c8f4c93f8b40/linked_in_profile",
   },
   {
+    title: "Meta Front-End Developer Specialization",
+    url: "https://www.coursera.org/account/accomplishments/specialization/ROUJXCAW6O6Q",
+  },
+  {
     title: "AWS Certified Cloud Practitioner",
     url: "https://www.credly.com/badges/b6074a5a-a750-4142-b64d-c6ad47098995/linked_in_profile",
+  },{
+    title: "ITIL® 4 Foundation Certificate in IT Service Management",
+    url: "https://badges.peoplecert.org/Badge/en/2/72C7982E-37E6-40A9-9422-164B9E5710C4?972",
   },
   {
     title: "Google: Technical Support Fundamentals",
     url: "https://www.coursera.org/account/accomplishments/verify/VWMAQRSDT53A",
-  },
+  }
 ];
 
 const skills = [
