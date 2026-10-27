@@ -57,8 +57,8 @@ const AboutPageDesc = () => {
         className="xl:w-1/2 2xl:w-2/3 xl:h-[960px] rounded-3xl overflow-hidden"
       >
         <img
-          className=" w-full h-full object-cover"
-          src="/profile.jpeg"
+          className=" w-full h-full object-cover xl:object-top"
+          src="/profile2.jpg"
           alt="about image"
         />
       </motion.div>
